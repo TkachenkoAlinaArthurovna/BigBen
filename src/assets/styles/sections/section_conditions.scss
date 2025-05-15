@@ -1,8 +1,12 @@
 .section_conditions {
+  position: sticky !important;
+  top: 0;
+  height: 100vh;
   background: $white;
   &__wrapper {
     display: flex;
     gap: max(30px, 3.125vw);
+    padding-top: 130px;
     padding-bottom: max(40px, 8.33vw);
   }
   &__title {
@@ -34,6 +38,14 @@
     img {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .section_conditions {
+    &__wrapper {
+      padding-top: 80px;
     }
   }
 }

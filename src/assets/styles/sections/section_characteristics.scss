@@ -1,5 +1,6 @@
 .section_characteristics {
-  padding-top: 130px;
+  padding-top: max(40px, 8.33vw);
+  padding-bottom: max(40px, 8.33vw);
   background: $white;
   &__title {
     margin-bottom: max(24px, 2.08vw);
@@ -45,6 +46,7 @@
       position: relative;
       border-radius: 8px;
       overflow: hidden;
+      width: 50%;
       div {
         position: absolute;
         top: 0;
@@ -67,12 +69,6 @@
     &__item {
       width: 33.333%;
     }
-  }
-}
-
-@media (max-width: 1100px) {
-  .section_characteristics {
-    padding-top: 80px;
   }
 }
 

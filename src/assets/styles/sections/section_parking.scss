@@ -22,6 +22,12 @@
     border-radius: 8px;
     overflow: hidden;
   }
+  .swiper-slide {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
   &__info {
     display: flex;
     flex-direction: column;
