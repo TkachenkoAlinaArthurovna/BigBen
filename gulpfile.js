@@ -130,8 +130,30 @@ function watchScssTemplates() {
   // .pipe(gulp.dest(paths.root));
 }
 
+// розкоментувати якщо не буде працювати збірка
+// function scssTemplateCreater() {
+//   fs.readdir(paths.styles.stylesPages, (err, nameFiles) => {
+//     const filesNameWithoutExt = nameFiles.map(el => el.replace(/\.scss/g, ''));
+//     const contentImportsFiles = filesNameWithoutExt.reduce(
+//       (acc, el) => (acc += `@import './pages/${el}';\n`),
+//       ``,
+//     );
+//     console.log(paths.styles.importsFiles, contentImportsFiles);
+//     fs.writeFile(paths.styles.importsFiles, contentImportsFiles, null, () => {});
+//   });
+// }
+
+// закоментувати якщо не буде працювати збірка
 function scssTemplateCreater() {
   fs.readdir(paths.styles.stylesPages, (err, nameFiles) => {
+    if (err) {
+      console.error('Error reading directory:', err);
+      return;
+    }
+    if (!Array.isArray(nameFiles)) {
+      console.error('No files found or invalid result:', nameFiles);
+      return;
+    }
     const filesNameWithoutExt = nameFiles.map(el => el.replace(/\.scss/g, ''));
     const contentImportsFiles = filesNameWithoutExt.reduce(
       (acc, el) => (acc += `@import './pages/${el}';\n`),

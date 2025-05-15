@@ -1,21 +1,25 @@
-import { fetchMarkersData } from './getMarkers';
-import mapStyle from './map-style';
-
+import getMapTheme from './map-style';
+import { createMarkersData } from './markersData';
+const filterBtn = document.querySelector('#filter-button');
+const filterNav = document.querySelector('.map-navigation');
+if (filterBtn) {
+  filterBtn.addEventListener('click', function() {
+    filterNav.classList.toggle('oppened');
+  });
+}
 export default function googleMap() {
   global.initMap = initMap;
 }
-
+// Google map start
 async function func() {
   const script = document.createElement('script');
-  // let key = document.documentElement.dataset.key ? document.documentElement.dataset.key : '';
-  // if (window.location.href.match(/localhost|smarto/)) key = '';
-  const key = 'AIzaSyBzbb-AuvMPkCnBLSyq4UYID22eZK7Fo_c';
-  script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap&language=${document.documentElement.getAttribute(
-    'lang',
-  )}`;
+  let key = 'AIzaSyBzbb-AuvMPkCnBLSyq4UYID22eZK7Fo_c';
+  // if (window.location.href.match(/localhost/)) key = '';
+  script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap&language=ua`;
   document.getElementsByTagName('head')[0].appendChild(script);
 }
-setTimeout(func, 1000);
+
+// setTimeout(func, 1000);
 const maps = document.querySelectorAll('.map');
 const options = {
   rootMargin: '0px',
@@ -38,43 +42,31 @@ maps.forEach(image => {
   const target = image;
   observer.observe(target);
 });
-let gmarkers1 = [];
 // eslint-disable-next-line no-unused-vars
 function initMap() {
-  gmarkers1 = [];
-  //28.4600074, 49.2384203
-  const center = {
-    lat: 49.81107395387965,
-    lng: 24.01985920490074,
-  };
-  /** Массив, куда записываются выбраные категории */
+  const gmarkers1 = [];
+  const center = { lat: 49.805353021486276, lng: 24.001803115986977 };
   const choosedCategories = new Set();
   choosedCategories.add('main');
-  choosedCategories.add('school');
-  /** Елементы, при клике на который будет происходить фильтрация */
   const filterItems = document.querySelectorAll('[data-marker]');
   const map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
+    zoom: 15,
     center,
     scrollwheel: false,
     navigationControl: false,
     mapTypeControl: false,
     scaleControl: false,
+    streetViewControl: false, // Disable Street View control
     draggable: true,
-    gestureHandling: 'cooperative',
-    language: document.documentElement.getAttribute('lang') || 'en',
-    styles: mapStyle(),
+    language: 'ua',
+    styles: getMapTheme(),
   });
   window.googleMap = map;
-
-  //Добавляем на карту
-  // polygon.setMap(map);
-
   const filterMarkers = function(category, categoriesArray) {
     gmarkers1.forEach(el => {
-      if (categoriesArray.has(el.category)) {
+      if (categoriesArray.has(el.category) || categoriesArray.size === 1) {
         el.setMap(map);
-        el.setAnimation(google.maps.Animation.DROP);
+        // el.setAnimation(google.maps.Animation.DROP);
       } else {
         el.setMap(null);
       }
@@ -86,114 +78,40 @@ function initMap() {
       item.classList.toggle('active');
       if (item.classList.contains('active')) {
         choosedCategories.add(item.dataset.category);
-
-        console.log(choosedCategories);
-        if (item.dataset.multicategory) {
-          const innerCategories = item.dataset.multicategory.split('~');
-          innerCategories.forEach(el => choosedCategories.add(el));
-        }
       } else {
         choosedCategories.delete(item.dataset.category);
-        console.log(choosedCategories);
-        if (item.dataset.multicategory) {
-          const innerCategories = item.dataset.multicategory.split('~');
-          innerCategories.forEach(el => choosedCategories.delete(el));
-        }
       }
       filterMarkers('main', choosedCategories);
     });
   });
 
-  // var baseFolder = '/wp-content/themes/centower/assets/images/markers/';
-  const baseFolder = window.location.href.match(/localhost/)
-    ? './assets/images/markers/'
-    : '/wp-content/themes/central-park/assets/images/markers/';
-  let defaultMarkerSize = new google.maps.Size(40, 53);
-  if (document.documentElement.clientWidth < 950) {
-    // defaultMarkerSize = new google.maps.Size(40, 53);
-  }
-
-  const ajaxMarkers = fetchMarkersData(google);
-
-  ajaxMarkers.then(result => {
-    putMarkersOnMap(result, map);
-  });
-
-  function putMarkersOnMap(markers, map) {
-    const infowindow = new google.maps.InfoWindow({
-      content: '',
-      maxWidth: 200,
-    });
-    const initedMarkers = [];
-    markers.forEach(marker => {
-      const category = marker.type;
-
-      const mapMarker = new google.maps.Marker({
-        map,
-        category,
-        zIndex: marker.zIndex || 1,
-        icon: marker.icon,
-        dataId: +marker.id,
-        content: marker.content,
-        position: new google.maps.LatLng(marker.position.lat, marker.position.lng),
-      });
-      mapMarker.category = category;
-      mapMarker.dataId = +marker.id;
-      initedMarkers.push(mapMarker);
-
-      google.maps.event.addListener(mapMarker, 'click', function() {
-        infowindow.setContent(marker.content);
-        infowindow.open(map, mapMarker);
-        map.panTo(this.getPosition());
-      });
-      mapMarker.name = marker.type;
-      console.log(mapMarker);
-      gmarkers1.push(mapMarker);
-    });
-    map.initedMarkers = initedMarkers;
-    console.log(map);
-    filterMarkers('main', choosedCategories);
-    markersHightlight(google, map, infowindow);
-    // markersHandler();
-  }
   /* beautify preserve:end */
-}
-
-function markersHightlight(google, map, infowindow) {
-  const $markerLinks = document.querySelectorAll('[data-marker-id]');
-  // const infowindow = new google.maps.InfoWindow({
-  //   content: '',
-  //   maxWidth: 280,
-  // });
-  querySelectorWithNodeList('[data-marker-id]', item => {
-    item.addEventListener('click', () => {
-      const marker = map.initedMarkers.find(el => {
-        return el.dataId === +item.dataset.markerId;
-      });
-      if (marker === undefined) return;
-      infowindow.setContent(marker.content);
-      infowindow.open(map, marker);
-      // console.log(marker);
-    });
+  const infowindow = new google.maps.InfoWindow({
+    text: '',
+    maxWidth: 300,
   });
-  // console.log(document.querySelectorAll('[data-marker-id]'));
-  // console.log(map);
-}
+  const markersData = createMarkersData(google);
 
-function querySelectorWithNodeList(selector, cb = () => {}) {
-  const $list = document.querySelectorAll(selector);
-  $list.forEach(el => cb(el));
-}
+  // Create markers using the data
+  markersData.forEach(marker => {
+    const category = marker.type;
+    const mapMarker = new google.maps.Marker({
+      map,
+      category,
+      // animation: google.maps.Animation.BOUNCE,
+      zIndex: marker.zIndex || 1,
+      icon: marker.icon,
+      cursor: 'grap', // курсор при наведении на макркер жк
+      position: new google.maps.LatLng(marker.position.lat, marker.position.lng),
+    });
 
-function markersHandler() {
-  document.querySelector('.map-wrapper').addEventListener('click', ({ target }) => {
-    const map = window.googleMap;
-    if (target.closest('[data-marker-id]') === null || !map) return;
-    const markerId = target.closest('[data-marker-id]').dataset.markerId;
-    const marker = map.initedMarkers.find(marker => marker.dataId == markerId);
-    marker && map.setCenter(marker.getPosition());
-    console.log(map.initedMarkers.find(marker => marker.dataId == markerId));
-    console.log(map);
-    // console.log(marker);
+    google.maps.event.addListener(mapMarker, 'click', function() {
+      infowindow.setContent(marker.text);
+      infowindow.open(map, mapMarker);
+      map.panTo(this.getPosition());
+    });
+
+    mapMarker.name = marker.type;
+    gmarkers1.push(mapMarker);
   });
 }
