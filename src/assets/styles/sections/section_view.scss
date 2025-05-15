@@ -1,0 +1,37 @@
+.section_view {
+  display: none;
+  position: sticky !important;
+  top: 0;
+  height: 100vh;
+  background-color: $dark_red;
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    padding: max(40px, 3.125vw) 0;
+    padding-top: 130px;
+  }
+  &__title {
+    color: $white;
+  }
+  &__subtitle {
+    color: $white;
+  }
+  .swiper_view {
+    width: 100%;
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .section_view {
+    &__wrapper {
+      padding-top: 80px;
+    }
+  }
+}

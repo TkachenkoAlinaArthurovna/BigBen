@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'GT-Walsheim-Regular';
+  font-display: swap;
+  src: local('SuisseIntl'), url('../fonts/GT-Walsheim-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Walsheim-Medium';
+  font-display: swap;
+  src: local('SuisseIntl'), url('../fonts/GT-Walsheim-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT-Walsheim-Bold';
+  font-display: swap;
+  src: local('SuisseIntl'), url('../fonts/GT-Walsheim-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HalvarBreit';
+  font-display: swap;
+  src: local('SuisseIntl'), url('../fonts/HalvarBreit-Blk.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HalvarBreit Bd';
+  font-display: swap;
+  src: local('SuisseIntl'), url('../fonts/HalvarBreit-Bd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Bold';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Medium';
+  font-weight: medium;
+  font-style: normal;
+  src: url('../fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Thin';
+  font-weight: thin;
+  font-style: normal;
+  src: url('../fonts/SF-Pro-Display-Thin.otf') format('opentype');
+  font-display: swap;
+}

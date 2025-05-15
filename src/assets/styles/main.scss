@@ -1,0 +1,38 @@
+@import './assets/vars'; // переменные
+@import './assets/smart-grid'; // mixins smartgrid.js
+// libraries
+@import './libs';
+
+// assets
+@import './assets/mixins'; // миксины
+@import './assets/fonts'; // шрифты
+@import './assets/base'; // общие стили
+@import './assets/animation'; // анимации
+@import './assets/class'; // main style
+@import './assets/interface'; // main style
+
+// sass
+@import './header';
+@import './footer';
+
+//sections
+@import './sections/section_top';
+@import './sections/section_about';
+@import './sections/section_video';
+@import './sections/section_planning';
+@import './sections/section_gallery';
+@import './sections/section_view';
+@import './sections/section_benefits';
+@import './sections/section_gallery_2';
+@import './sections/section_characteristics';
+@import './sections/section_parking';
+@import './sections/section_gallery_3';
+@import './sections/section_construction';
+@import './sections/section_construction_bottom';
+@import './sections/section_news';
+@import './sections/section_conditions';
+@import './sections/section_discount';
+@import './sections/section_doc';
+@import './sections/section_developer';
+@import './sections/section_developer';
+@import './popup';

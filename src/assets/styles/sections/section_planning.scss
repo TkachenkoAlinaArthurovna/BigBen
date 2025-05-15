@@ -1,0 +1,133 @@
+.section_planning {
+  background-color: $dark_beige;
+  &__wrapper {
+    padding: max(40px, 3.125vw) 0;
+  }
+  &__title {
+    color: $dark_red;
+  }
+  &__subtitle {
+    color: $dark_red;
+  }
+  &__wrapper_for_flats {
+    margin-bottom: 40px;
+  }
+  &__main_block {
+    padding: max(16px, 2.08vw);
+    border-radius: 8px;
+    background-color: $white;
+  }
+  .swiper-button-planning-next,
+  .swiper-button-planning-prev {
+    display: none;
+    border: 1.111px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(12px);
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    &__top {
+      margin: 0 max(0, 2.18vw) max(12px, 1.25vw) max(0, 2.18vw);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__size {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 16px;
+      span:first-child {
+        font-family: $default-font-m;
+        font-size: max(18px, 1.09vw);
+      }
+      span:last-child {
+        font-size: 18px;
+      }
+      span:last-child {
+        font-family: $default-font-m;
+      }
+    }
+    &__price {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: max(12px, 1.25vw);
+      span:first-child {
+        font-size: 14px;
+      }
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      height: 44px;
+      border: none;
+      border-radius: 8px;
+      background-color: $gray;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 1s ease-out;
+    }
+    &__button:hover {
+      background-color: $gray_3;
+    }
+  }
+  &__bottom_button {
+    position: relative;
+    width: 100%;
+    height: max(100px, 8.33vw);
+    padding: max(16px, 1.35vw) max(16px, 1.56vw);
+    background-color: $red;
+    transition: all 1s ease-out;
+    cursor: pointer;
+    img {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    span {
+      position: relative;
+      z-index: 1;
+      font-family: $default-font-m;
+      font-size: max(20px, 1.66vw);
+      color: $white;
+    }
+    svg {
+      position: relative;
+      z-index: 1;
+      transition: all 1s ease-out;
+    }
+  }
+  &__bottom_button:hover {
+    background-color: $red_2;
+    svg {
+      transform: scale(1.1);
+    }
+  }
+  &__bottom_button_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1350px) {
+  .section_planning {
+    .swiper-button-planning-next,
+    .swiper-button-planning-prev {
+      display: flex;
+    }
+  }
+}

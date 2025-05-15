@@ -1,0 +1,68 @@
+.section_parking {
+  position: relative;
+  padding: 40px 0 max(40px, 3.9vw) 0;
+  color: $beige;
+  background-color: $dark-red;
+  &__title {
+    margin-bottom: max(24px, 2.08vw);
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: max(16px, 2.18vw);
+    text-align: center;
+    font-size: max(16px, 0.93vw);
+  }
+  &__text {
+    margin-bottom: max(24px, 4.27vw);
+    text-align: center;
+    font-size: max(14px, 0.93vw);
+  }
+  .swiper_parking {
+    margin-bottom: max(24px, 4.79vw);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    div {
+      display: flex;
+      border-bottom: 1px solid $beige;
+      span {
+        width: 33.333%;
+        padding: 12px 0;
+        font-size: max(16px, 0.93vw);
+      }
+      span:first-child {
+        font-family: $default-font-m;
+      }
+      span:last-child {
+        text-align: end;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section_parking {
+    &__info {
+      div {
+        flex-direction: column;
+        padding: 16px 0;
+        span {
+          width: 100%;
+          padding: 0;
+        }
+        span:first-child {
+          margin-bottom: 6px;
+        }
+        span:last-child {
+          margin-bottom: 12px;
+          order: -1;
+          text-align: start;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.content {
+  position: relative;
+  flex-grow: 1;
+  padding: $padding;
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: $padding-mobile;
+  }
+}

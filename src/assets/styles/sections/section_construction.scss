@@ -1,0 +1,204 @@
+.section_construction {
+  background: $white;
+  &__wrapper {
+    // padding: calc(10vw + max(40px, 8.33vw)) 0 max(32px, 2.5vw) 0;
+    padding: calc(max(40px, 8.33vw)) 0 max(32px, 2.5vw) 0;
+  }
+  &__title {
+    margin-bottom: max(24px, 2.08vw);
+    color: $black_2;
+  }
+  &__subtitle {
+    margin-bottom: max(16px, 2.08vw);
+    font-family: $default-font-b;
+    font-size: max(20px, 1.66vw);
+    color: $black;
+  }
+  &__buttons {
+    position: relative;
+    display: flex;
+    gap: max(12px, 1.25vw);
+    height: 50px;
+    margin-bottom: max(16px, 1.25vw);
+  }
+  &__button {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    padding: 12px 16px;
+    border: 1px solid rgba(93, 91, 91, 0.12);
+    border-radius: 8px;
+    font-size: max(16px, 0.93vw);
+    color: $dark_gray;
+    background-color: $Ivory;
+    transition: all 1s ease-out;
+    cursor: pointer;
+    span {
+      width: 80%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  &__button.active {
+    height: auto;
+  }
+  &__button_1 {
+    left: 0;
+    width: 270px;
+  }
+  &__button_2 {
+    left: 300px;
+    width: auto;
+  }
+  &__wrapper_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  &__wrapper_subbuttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-out;
+  }
+  &__wrapper_subbuttons.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__subbutton {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 4px 0;
+    font-size: max(16px, 0.93vw);
+    color: $dark_gray;
+    cursor: pointer;
+  }
+  .section_construction__display {
+    padding: max(14px, 1.25vw);
+    border-radius: 8px;
+    background-color: $gray;
+  }
+  .display {
+    &__top {
+      margin-bottom: max(16px, 1.25vw);
+      font-size: 14px;
+      line-height: 110%;
+      color: $dark_gray;
+    }
+    &__ranges {
+      display: flex;
+      flex-direction: column;
+    }
+    &__ranges_title {
+      margin-bottom: 12px;
+      font-size: max(16px, 0.93vw);
+      font-family: $default-font-m;
+      svg {
+        display: none;
+      }
+    }
+    &__ranges_wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    &__range {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    &__range_name {
+      width: 15%;
+    }
+    &__range_value {
+      width: 10%;
+      text-align: end;
+      font-family: $default-font-m;
+    }
+    &__range_scale {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      width: 100%;
+      height: 10px;
+      border-radius: 8px;
+      margin-left: 10px;
+      background-color: $white;
+    }
+    &__range_scale span {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 50%;
+      height: 10px;
+      border-radius: 8px;
+      background-color: $dark_beige;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section_construction {
+    &__buttons {
+      height: 104px;
+    }
+    &__button {
+      height: 46px;
+    }
+    &__button_1 {
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    &__button_2 {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    .display {
+      &__ranges_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        svg {
+          display: block;
+        }
+      }
+      &__ranges_wrapper {
+        height: 0;
+        overflow: hidden;
+      }
+      &__ranges_wrapper.active {
+        height: auto;
+      }
+      &__range {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      &__range_name {
+        width: 70%;
+      }
+      &__range_value {
+        width: 20%;
+      }
+      &__range_scale {
+        flex: auto;
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

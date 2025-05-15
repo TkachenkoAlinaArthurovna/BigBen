@@ -1,0 +1,17 @@
+import './modules/scroll/leniscroll';
+import './gulp-modules/index';
+import './gulp-modules/swipers';
+import './components/menu';
+import './components/section_video';
+import './components/section_gallery';
+import './components/section_view';
+import './components/section_benefits';
+import './components/section_planning';
+import './components/section_gallery_2';
+import './components/section_characteristics';
+import './components/section_parking';
+import './components/section_gallery_3';
+import './components/section_construction';
+import './components/section_construction_bottom';
+import './components/section_doc';
+import './components/popup';
