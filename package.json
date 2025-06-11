@@ -89,6 +89,7 @@
     "intl-tel-input": "^17.0.12",
     "jquery": "^3.7.0",
     "masonry-layout": "^4.2.2",
+    "nouislider": "^15.8.1",
     "on-change": "^2.2.1",
     "yup": "^0.32.8"
   }

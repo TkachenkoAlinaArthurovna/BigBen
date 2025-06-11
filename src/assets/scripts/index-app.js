@@ -15,3 +15,4 @@ import './components/section_construction';
 import './components/section_construction_bottom';
 import './components/section_doc';
 import './components/popup';
+import './components/popup_selection';

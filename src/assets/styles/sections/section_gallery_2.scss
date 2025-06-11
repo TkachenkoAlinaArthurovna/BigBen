@@ -53,9 +53,21 @@
     }
   }
 }
-
+@media (max-width: 768px) {
+  .section_gallery_2 {
+    .swiper-slide img {
+      width: 100%;
+      height: calc(100vw - max(32px, 18.75vw));
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
 @media (max-width: 480px) {
   .section_gallery_2 {
     padding-right: 16px;
+    .swiper-slide img {
+      height: calc(100vw - 32px);
+    }
   }
 }

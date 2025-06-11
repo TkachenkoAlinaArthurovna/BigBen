@@ -3,6 +3,14 @@
   padding: 40px 0 max(40px, 3.9vw) 0;
   color: $beige;
   background-color: $dark-red;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   &__title {
     margin-bottom: max(24px, 2.08vw);
     text-align: center;
@@ -13,7 +21,8 @@
     font-size: max(16px, 0.93vw);
   }
   &__text {
-    margin-bottom: max(24px, 4.27vw);
+    max-width: 600px;
+    margin: 0 auto max(24px, 4.27vw) auto;
     text-align: center;
     font-size: max(14px, 0.93vw);
   }
@@ -26,6 +35,7 @@
     img {
       width: 100%;
       height: auto;
+      border-radius: 8px;
     }
   }
   &__info {
@@ -69,6 +79,33 @@
           text-align: start;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section_parking {
+    &__title {
+      text-align: start;
+    }
+    &__subtitle {
+      text-align: start;
+    }
+    &__text {
+      text-align: start;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: calc(100vw - max(32px, 18.75vw));
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .section_parking {
+    .swiper-slide img {
+      height: calc(100vw - 32px);
     }
   }
 }

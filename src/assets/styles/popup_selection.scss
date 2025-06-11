@@ -1,0 +1,397 @@
+.popup_selection {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.9);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  &__title {
+    font-size: max(32px, 3.125vw);
+  }
+  &__contacts_title {
+    margin: 0 0 24px 0;
+    font-family: $default-font-m;
+    font-size: 32px;
+  }
+  &__wrapper_for_scroll {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 0 max(16px, 9.375vw);
+    overflow: auto;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    padding: max(40px, 2.6vw);
+    border-radius: 8px;
+    background-color: $white;
+    overflow: auto;
+  }
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    svg {
+      display: block;
+      width: 40px;
+      height: 40px;
+      transition: all 0.5s ease-out;
+      cursor: pointer;
+    }
+    svg:hover {
+      transform: rotate(90deg);
+    }
+  }
+  &__back_to_flats {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    svg {
+      width: 16px;
+      height: 16px;
+      transform: rotate(90deg);
+    }
+    span {
+      font-size: 14px;
+      color: $dark_gray;
+    }
+  }
+  .popup_selection_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    &__title {
+      margin-bottom: 16px;
+      font-weight: 500;
+      font-family: $default-font-m;
+    }
+    &__wrapper_for_checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    &__wrapper_for_inputs {
+      display: flex;
+      gap: 8px;
+      input {
+        width: 120px;
+        height: 42px;
+        padding-left: 12px;
+        border-radius: 8px;
+        border: 1px solid #5d5b5b1f;
+        color: $black;
+        background-color: $Ivory;
+      }
+      input::placeholder {
+        font-size: max(16px, 0.93vw);
+        color: $dark_gray;
+      }
+    }
+    &__wrapper_for_select {
+      position: relative;
+      width: max-content;
+      cursor: pointer;
+      select {
+        width: 180px;
+        height: 42px;
+        padding: 0 16px;
+        border-radius: 8px;
+        border: 1px solid #5d5b5b1f;
+        color: $black;
+        background-color: $Ivory;
+        font-family: $default-font;
+        font-size: 18px;
+        color: $dark_gray;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+      }
+      select option:hover {
+        background-color: rgba(0, 0, 0, 0) !important;
+      }
+    }
+    &__wrapper_for_select::after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      right: 12px;
+      transform: translate(0, -50%) rotate(90deg);
+
+      display: block;
+      width: 14px;
+      height: 14px;
+      background-image: url(../../assets/images/svg/arrow.svg);
+      background-size: 14px 14px;
+
+      pointer-events: none;
+    }
+  }
+  .popup_selection_item__range {
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type='number'] {
+      -moz-appearance: textfield;
+    }
+    .filters-price {
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: max(30px, 3.125vw);
+        margin-bottom: 32px;
+      }
+      &__title {
+        font-size: 20px;
+        font-weight: 500;
+        color: $black;
+      }
+      &__inputs {
+        display: flex;
+        width: max-content;
+        padding: 6px 16px;
+        border: none;
+        border-radius: 24px;
+        font-size: 16px;
+        background-color: $gray;
+      }
+      &__label {
+        display: flex;
+        input {
+          width: 60px;
+          margin-left: 10px;
+          padding: 0 4px;
+          border: none;
+          background: $gray;
+        }
+      }
+    }
+  }
+  .popup_form button {
+    width: 225px;
+    color: $white;
+    background: $red;
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+  .popup_form button:hover {
+    background: $red_2;
+  }
+}
+.popup_selection.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.noUi-target {
+  max-width: 960px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  background: $gray !important;
+}
+.noUi-connect {
+  background: $dark_beige !important;
+}
+.noUi-horizontal .noUi-handle {
+  width: 52px !important;
+  height: 52px !important;
+  border: 1px solid $dark_beige !important;
+  border-radius: 50% !important;
+  transform: translate(0, -25%) !important;
+  background: rgba(0, 0, 0, 0) !important;
+  cursor: pointer !important;
+}
+.noUi-horizontal .noUi-handle .noUi-touch-area {
+  transition: all 0.5s ease-out;
+}
+.noUi-horizontal .noUi-handle:hover .noUi-touch-area {
+  border-radius: 50%;
+  box-shadow: 0px 6px 12px 0px rgba(235, 196, 157, 0.44);
+}
+
+.noUi-handle:before {
+  position: absolute !important;
+  width: 26px !important;
+  height: 26px !important;
+  border: 1px solid $dark_beige !important;
+  border-radius: 50% !important;
+  background: #fef6f3 !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.noUi-handle:after {
+  position: absolute !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-top: 1px solid $dark_beige !important;
+  border-bottom: 1px solid $dark_beige !important;
+  border-radius: 50% !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) rotate(-40deg) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.checkbox {
+  position: relative;
+
+  &__input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    opacity: 0;
+  }
+  &__label {
+    padding-left: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: $dark_gray;
+  }
+  &__label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #5d5b5b1f;
+    border-radius: 4px;
+    transition: all 0.5s ease-out;
+  }
+
+  &__label::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../assets/images/svg/check.svg);
+    background-size: 16px 16px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+  }
+  &__input:checked + .checkbox__label:before {
+    background-color: $dark_beige;
+    border-color: $dark_beige;
+  }
+  &__input:checked + .checkbox__label:after {
+    opacity: 1;
+  }
+  &__input:checked + .checkbox__label {
+    color: $black;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup_selection {
+    &__wrapper {
+      padding: 40px 16px;
+    }
+    &__close {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .popup_selection_item {
+      margin-bottom: 24px;
+      .checkbox__label {
+        font-size: 16px;
+      }
+    }
+    .popup_selection_item__title {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    .popup_selection_item__range .filters-price__wrapper {
+      flex-direction: column;
+      align-items: start;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .popup_selection_item__wrapper_for_checkboxes {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .popup_selection_item__wrapper_for_select select {
+      width: 232px;
+    }
+    &__contacts_title {
+      margin-bottom: 0px;
+      font-size: 21px;
+    }
+    .popup_form__item label {
+      font-size: 16px;
+    }
+  }
+  .noUi-target {
+    max-width: 92% !important;
+    margin: 0 auto !important;
+  }
+  .noUi-horizontal {
+    height: 16px !important;
+  }
+  .noUi-horizontal .noUi-handle {
+    width: 42px !important;
+    height: 42px !important;
+    top: -4px !important;
+  }
+  .noUi-handle:before {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup_selection {
+    &__close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .popup_form button {
+      width: 100%;
+    }
+  }
+}
+
+#rooms_all,
+#features_all,
+#for_who_input {
+  visibility: hidden;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}

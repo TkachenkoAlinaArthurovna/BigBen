@@ -1,15 +1,23 @@
 @font-face {
   font-family: 'GT-Walsheim-Regular';
   font-display: swap;
-  src: local('SuisseIntl'), url('../fonts/GT-Walsheim-Regular.otf') format('opentype');
+  src: local('SuisseIntl'), url('../fonts/GT-Walsheim-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GT-Walsheim-Medium';
+  font-family: 'GTWalsheimPro-Medium';
   font-display: swap;
-  src: local('SuisseIntl'), url('../fonts/GT-Walsheim-Medium.otf') format('opentype');
+  src: local('SuisseIntl'), url('../fonts/GTWalsheimPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GTWalsheimPro-Light';
+  font-display: swap;
+  src: local('SuisseIntl'), url('../fonts/GTWalsheimPro-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

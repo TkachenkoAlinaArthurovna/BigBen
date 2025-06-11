@@ -14,6 +14,7 @@ function raf(time) {
 }
 if (/Mobi|Android|iPhone/i.test(navigator.userAgent) && window.innerWidth < 1024) {
   lenis.destroy();
+  console.log('TEST');
 }
 
 requestAnimationFrame(raf);

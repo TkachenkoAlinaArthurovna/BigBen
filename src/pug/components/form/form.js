@@ -237,7 +237,35 @@ export default class FormMonster {
         try {
           this.watchedState.status = 'loading';
           const formData = new FormData(this.elements.$form);
+          //----------//
+          const priceFrom = document.querySelector('#input-0').value;
+          const priceTo = document.querySelector('#input-1').value;
+
+          const container = document.querySelector(
+            '.popup_selection_item__wrapper_for_checkboxes1',
+          );
+          const checkedCheckboxes = container.querySelectorAll('input[type="checkbox"]:checked');
+          const checkedIds = Array.from(checkedCheckboxes).map(cb => cb.id);
+
+          const container2 = document.querySelector(
+            '.popup_selection_item__wrapper_for_checkboxes2',
+          );
+          const checkedCheckboxes2 = container2.querySelectorAll('input[type="checkbox"]:checked');
+          const checkedIds2 = Array.from(checkedCheckboxes2).map(cb => cb.id);
+
+          const sizeFrom = document.querySelector('#size-from').value;
+          const sizeTo = document.querySelector('#size-to').value;
+
+          const ForWho = document.querySelector('#for-who').value;
+
           formData.append('action', 'app');
+          formData.append('price-from', priceFrom);
+          formData.append('price-to', priceTo);
+          formData.append('number-of-room', checkedIds);
+          formData.append('features', checkedIds2);
+          formData.append('size-from', sizeFrom);
+          formData.append('size-to', sizeTo);
+          formData.append('for-who', ForWho);
 
           /* eslint-disable-next-line */
           const { error, code_error } = await sendForm(formData);

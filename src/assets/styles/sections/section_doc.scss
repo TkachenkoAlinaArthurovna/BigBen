@@ -1,6 +1,7 @@
 .section_doc {
   background: $white;
   &__wrapper {
+    padding-top: max(40px, 8.33vw);
     // padding-bottom: calc(10vw + max(40px, 8.33vw));
     padding-bottom: calc(max(40px, 8.33vw));
   }
@@ -35,7 +36,7 @@
   z-index: 100;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -44,19 +45,25 @@
   transition: all 0.5s ease-out;
   opacity: 0;
   visibility: hidden;
+  overflow: hidden;
   &__wrapper {
     position: relative;
     width: 340px;
-    height: auto;
-    padding: 30px;
+    max-height: 100vh;
+    height: 436px;
+    padding: 30px 34px;
     border-radius: 24px;
     background-color: $white;
+  }
+  .swiper {
+    height: 100%;
+    overflow: auto;
   }
   &__close {
     position: absolute;
     z-index: 50;
-    top: 14px;
-    right: 14px;
+    top: 4px;
+    right: 4px;
 
     svg {
       display: block;
@@ -117,6 +124,9 @@
 
 @media (max-width: 1024px) {
   .section_doc {
+    .swiper {
+      padding-bottom: 60px;
+    }
     .swiper-slide {
       div {
         img {
@@ -126,6 +136,20 @@
           font-size: 12px;
         }
       }
+    }
+    .swiper-button {
+      bottom: 0;
+      top: auto;
+      transform: none;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .swiper-button-main-next {
+      right: 50%;
+      transform: translate(110%, 0) rotate(180deg);
+    }
+    .swiper-button-main-prev {
+      left: 50%;
+      transform: translate(-110%, 0);
     }
   }
 }

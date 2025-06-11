@@ -320,12 +320,17 @@
       .second-block {
         align-items: start;
         font-size: 16px;
+
         div {
           display: flex;
           align-items: center;
           gap: 10px;
           margin-bottom: 16px;
           a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
             color: $black;
           }
         }

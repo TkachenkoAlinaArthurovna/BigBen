@@ -45,7 +45,7 @@ maps.forEach(image => {
 // eslint-disable-next-line no-unused-vars
 function initMap() {
   const gmarkers1 = [];
-  const center = { lat: 49.805353021486276, lng: 24.001803115986977 };
+  const center = { lat: 49.80980317048622, lng: 24.019887101848713 };
   const choosedCategories = new Set();
   choosedCategories.add('main');
   const filterItems = document.querySelectorAll('[data-marker]');

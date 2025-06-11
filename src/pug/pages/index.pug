@@ -14,6 +14,9 @@ block scripts
   script(defer src='./assets/scripts/libs.js')
 block header
   include ../includes/header.pug
+  include ../includes/popup.pug
+  include ../includes/popup_doc.pug
+  include ../includes/popup_selection.pug
 block content
   .page__content
     include ../includes/section_top.pug
@@ -34,8 +37,7 @@ block content
     include ../includes/section_discount.pug
     include ../includes/section_doc.pug
     include ../includes/section_developer.pug
-    include ../includes/popup.pug
-    include ../includes/popup_doc.pug
+    
 block footer
   include ../includes/footer.pug
 

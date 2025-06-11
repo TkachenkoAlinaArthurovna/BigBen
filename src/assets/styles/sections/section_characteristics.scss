@@ -29,13 +29,19 @@
       align-items: center;
       gap: 8px;
       span {
-        font-size: 16px;
+        font-size: max(14px, 0.83vw);
         line-height: 100%;
         color: $dark_gray;
+      }
+      svg {
+        width: max(8px, 0.625vw);
+        height: max(8px, 0.625vw);
       }
     }
     div:last-child {
       padding-left: 20px;
+      font-size: 18px;
+      font-family: $default-font-m;
     }
   }
   &__photo {

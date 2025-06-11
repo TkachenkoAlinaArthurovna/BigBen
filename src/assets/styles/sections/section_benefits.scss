@@ -11,10 +11,15 @@
     color: $black_2;
   }
   &__tabs_buttons {
+    position: sticky;
+    z-index: 10;
+    top: 120px;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-bottom: 40px;
+    padding: 10px 0;
+    background: $white;
     button {
       padding: max(12px, 0.83vw) max(12px, 1.04vw);
       border: 1px solid $beige_3;
@@ -23,6 +28,8 @@
       background-color: $white;
       transition: all 1s ease-out;
       cursor: pointer;
+      font-family: $default-font;
+      font-size: 16px;
     }
     button.active {
       color: $dark_red;
@@ -42,13 +49,19 @@
     top: 0;
     left: 0;
     display: flex;
-    gap: 12px;
+    gap: 60px;
     width: 100%;
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease-out;
-    font-size: 18px;
+    font-size: max(14px, 0.93vw);
     color: $black_2;
+    h3 {
+      font-size: max(18px, 1.09vw);
+    }
+    p {
+      font-size: max(14px, 0.93vw);
+    }
   }
   &__content.active {
     position: relative;
@@ -59,6 +72,7 @@
     display: flex;
     justify-content: space-between;
     width: 50%;
+    padding-left: 2px;
     gap: max(20px, 3.125vw);
   }
   [data-info='architectural_solution'] .section_benefits__content_left {
@@ -154,10 +168,15 @@
     cursor: pointer;
     transition: all 1s ease-out;
     svg {
-      width: 22px;
-      height: 22px;
+      width: max(16px, 1.56vw);
+      height: max(16px, 1.56vw);
+      position: relative;
+      z-index: 1;
       transition: all 1s ease-out;
     }
+  }
+  &__button_consultation.button_mob {
+    display: none;
   }
   &__button_consultation:hover {
     background-color: $red_2;
@@ -215,6 +234,7 @@
   }
   &__content_right {
     width: 50%;
+    padding-right: 2px;
     border-radius: 8px;
     overflow: hidden;
     img {
@@ -232,7 +252,23 @@
     }
   }
 }
-
+.section_benefits::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: $white;
+}
+@media (max-width: 1100px) {
+  .section_benefits {
+    &__tabs_buttons {
+      top: 70px;
+    }
+  }
+}
 @media (max-width: 1024px) {
   .section_benefits {
     &__content {
@@ -252,9 +288,17 @@
       height: auto;
       padding: 8px 12px;
     }
+    &__content_markers {
+      button:hover {
+        background-color: $gray;
+      }
+      button.active {
+        background-color: $gray_3;
+      }
+    }
     &__content_right {
       width: 100%;
-      min-height: 500px;
+      // min-height: 500px;
       .map {
         min-height: 500px;
         #map {
@@ -265,9 +309,22 @@
     &__button_consultation {
       display: none;
     }
+    &__button_consultation.button_mob {
+      display: flex;
+      height: 100px;
+      margin-top: 24px;
+    }
+    &__button_consultation_wrapper {
+      width: 100%;
+      div {
+        padding: 16px;
+        span {
+          font-size: max(21px, 1.66vw);
+        }
+      }
+    }
   }
 }
-
 @media (max-width: 420px) {
   .section_benefits [data-info='architectural_solution'] .section_benefits__content_left button {
     width: 100%;

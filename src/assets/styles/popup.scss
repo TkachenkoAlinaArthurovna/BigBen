@@ -3,7 +3,7 @@
   z-index: 100;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -12,6 +12,7 @@
   transition: all 0.5s ease-out;
   opacity: 0;
   visibility: hidden;
+  overflow: hidden;
   &__wrapper_for_scroll {
     height: 90vh;
     overflow: auto;
@@ -155,5 +156,35 @@
   .popup_form__text {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup {
+    &__close {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__wrapper {
+      padding: 40px 24px;
+      gap: 0;
+    }
+
+    &__title {
+      position: relative;
+      margin-bottom: 12px;
+      font-size: 24px;
+      div:first-child {
+        img {
+          position: absolute;
+          right: 0;
+          bottom: -80px;
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
   }
 }

@@ -1,21 +1,10 @@
-import Swiper, { Navigation } from 'swiper';
-Swiper.use([Navigation]);
+document.getElementById('loadIframeButton').addEventListener('click', function() {
+  // Заменяем URL iframe на реальный
+  var iframe = document.getElementById('lazyIframe');
+  iframe.src = 'https://v3.vrnet.io/?lscene=ua/riel/bigben/ext';
+  iframe.style.display = 'block';
 
-const swiper = new Swiper('.swiper_view', {
-  direction: 'horizontal',
-  slidesPerView: 2,
-  loop: true,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.swiper-button-view-next',
-    prevEl: '.swiper-button-view-prev',
-  },
-  breakpoints: {
-    1024: {
-      slidesPerView: '2',
-    },
-    0: {
-      slidesPerView: '1',
-    },
-  },
+  // Скрываем кнопку после загрузки iframe
+  this.style.display = 'none';
+  document.querySelector('.iframe-container').classList.add('active-iframe');
 });

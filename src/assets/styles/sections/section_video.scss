@@ -80,3 +80,9 @@
     padding-top: 80px;
   }
 }
+
+@media (max-width: 500px) {
+  .section_video {
+    position: relative !important;
+  }
+}

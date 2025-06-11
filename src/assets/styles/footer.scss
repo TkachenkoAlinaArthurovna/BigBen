@@ -35,7 +35,7 @@
   &__right {
     position: relative;
     width: 46.875vw;
-    padding: max(16px, 3.125vw) max(16px, 2.08vw);
+    padding: 10px max(16px, 2.08vw);
     border-radius: 8px;
     border: 1px solid var(--white, #fff);
     background: rgba(70, 70, 70, 0.4);
@@ -68,6 +68,11 @@
     margin-bottom: 60px;
     font-size: max(14px, 0.93vw);
     color: $white;
+
+    a {
+      color: inherit;
+      overflow: hidden;
+    }
 
     @keyframes animateLineItem {
       0% {
@@ -118,6 +123,7 @@
     gap: max(16px, 1.25vw);
     margin-top: 24px;
     margin-bottom: max(24px, 2.5vw);
+    font-size: max(16px, 0.93vw);
     div {
       display: flex;
       justify-content: start;
@@ -144,9 +150,12 @@
         height: max(18px, 1.25vw);
       }
       .arrow {
-        width: 8px;
-        height: 8px;
+        width: 16px;
+        height: 16px;
       }
+    }
+    div:last-child {
+      cursor: auto;
     }
     div:hover {
       transform: scale(1.05);
@@ -204,6 +213,7 @@
         border: none;
         border-bottom: 1px solid $white;
         background-color: rgba(0, 0, 0, 0);
+        color: $white;
       }
       textarea::placeholder {
         font-size: 14px;
@@ -233,8 +243,8 @@
         font-size: 16px;
       }
       svg {
-        width: 8px;
-        height: 8px;
+        width: 16px;
+        height: 16px;
       }
     }
     button:hover {

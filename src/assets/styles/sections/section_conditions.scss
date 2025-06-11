@@ -15,8 +15,8 @@
   }
   &__subtitle {
     margin-top: max(12px, 1.25vw);
-    margin-bottom: 0;
-    font-size: 24px;
+    margin-bottom: 4px;
+    font-size: max(21px, 1.25vw);
     font-family: $default-font-m;
   }
   &__content_text_wrapper {
@@ -26,8 +26,16 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: max(12px, 1.25vw) 0;
+      padding: 12px 0;
       border-bottom: 1px solid $white_2;
+      font-size: max(16px, 1.25vw);
+      span {
+        flex: 1;
+        a {
+          text-decoration: underline;
+          color: inherit;
+        }
+      }
     }
   }
   &__left {
@@ -61,5 +69,12 @@
     &__right {
       width: 100%;
     }
+  }
+}
+
+@media (max-height: 500px) {
+  .section_conditions {
+    position: relative !important;
+    height: auto;
   }
 }

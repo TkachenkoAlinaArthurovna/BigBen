@@ -4,7 +4,6 @@
     display: flex;
     gap: max(30px, 3.125vw);
     padding-top: 130px;
-    padding-bottom: max(40px, 8.33vw);
   }
   &__title {
     margin-bottom: max(24px, 2.08vw);
@@ -18,10 +17,19 @@
       font-family: $default-font-m;
     }
   }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+  }
+  &__item:first-child {
+  }
   &__item {
     display: flex;
     flex-direction: column;
     padding: max(16px, 1.04vw) 0;
+    border-bottom: 1px solid #e0e0e0;
     div {
       display: flex;
       gap: 10px;
@@ -63,6 +71,12 @@
     transition: all 1s ease-out;
     overflow: hidden;
   }
+  &__button:hover {
+    background-color: $red_2;
+    svg {
+      transform: scale(1.1);
+    }
+  }
   &__button_wrapper {
     img {
       position: absolute;
@@ -81,9 +95,17 @@
       justify-content: space-between;
       padding: max(16px, 1.35vw) max(16px, 1.56vw);
       span {
+        flex: 1;
         font-size: max(20px, 1.56vw);
-        font-family: 'GT-Walsheim-Medium', medium;
+        font-family: $default-font-m;
         color: #fff;
+      }
+      svg {
+        width: max(16px, 1.56vw);
+        height: max(16px, 1.56vw);
+        position: relative;
+        z-index: 1;
+        transition: all 1s ease-out;
       }
     }
   }

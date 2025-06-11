@@ -12,7 +12,10 @@
                     img(src="../../assets/images/dog.png")
                 div і наш фахівець проконсультує вас з усіх питань
             .popup_form
-                form(action="" method="" data-form="call_back-form")
+                form(action="" method="" data-form="call_back-form") 
+                    .popup_form__item.name_of_form(data-field-input data-field-form-name)
+                        label(for="form-name")
+                        input(type="text" name="form-name" id="form-name" value="call-back" readonly) 
                     .popup_form__item(data-field-input data-field-name)
                         label(for="name") Ім’я:
                         input(type="text" name="name" id="name" placeholder="Введіть своє Ім’я")
@@ -27,7 +30,7 @@
                         .input-message(data-input-message)
                     .popup_form__item
                         label.text_halvar(for="message") Повідомлення
-                        textarea.text(type="text" name="message" id="message" rows="5" placeholder="Введіть своє повідомлення тут...")
+                        textarea.text(id="order_call_message" type="text" name="message" rows="5" placeholder="Введіть своє повідомлення тут...")
                     .popup_form__bottom
                         button(class="contact__form_button btn_blue" type="submit" data-btn-submit)
                             span(data-btn-submit-text) Надіслати

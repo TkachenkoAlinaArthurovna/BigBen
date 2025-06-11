@@ -1,0 +1,99 @@
+.popup_selection 
+    .popup_selection__wrapper_for_scroll
+        .popup_selection__wrapper 
+            .popup_selection__title.section_title
+                div Підбір квартири
+            .popup_selection__close
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.25 29.75L29.75 12.25" stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M29.75 29.75L12.25 12.25" stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            .popup_selection__back_to_flats 
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.38012 5.19727L6.18345 9.0006C6.63262 9.44977 7.36762 9.44977 7.81678 9.0006L11.6201 5.19727" stroke="#5D5B5B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                span Повернутися до квартир
+            .popup_form
+                form(action="" method="" data-form="call_back-form_selection")  
+                    .popup_form__item.name_of_form(data-field-input data-field-form-name)
+                        label(for="form-name")
+                        input(type="text" name="form-name" id="form-name" value="flats-options-selection" readonly) 
+                    .popup_selection_item
+                        .popup_selection_item__range.filters-price
+                            .filters-price__wrapper
+                                .filters-price__title Який у вас бюджет?
+                                .filters-price__inputs
+                                    label.filters-price__label  
+                                        span Від $ 
+                                        input.filters-price__input(type="number" min="100000" max="200000" placeholder="100000" id="input-0")
+                                    label.filters-price__label
+                                        span до $ 
+                                        input.filters-price__input(type="number" min="100000" max="200000" placeholder="200000" id="input-1")
+                            .filters-price__slider(id="range-slider")
+                    .popup_selection_item
+                        .popup_selection_item__title Яка кількість кімнат вам потрібна?
+                        .popup_selection_item__wrapper_for_checkboxes.popup_selection_item__wrapper_for_checkboxes1
+                            .checkbox
+                                input.checkbox__input.item-value-checkbox(type='checkbox' id="studio")
+                                label.checkbox__label(for="studio") Студія
+                            .checkbox
+                                input.checkbox__input.item-value-checkbox(type='checkbox' id="bedroom_1")
+                                label.checkbox__label(for="bedroom_1") 1 Спальня
+                            .checkbox
+                                input.checkbox__input.item-value-checkbox(type='checkbox' id="bedroom_2")
+                                label.checkbox__label(for="bedroom_2") 2 Спальні
+                            .checkbox
+                                input.checkbox__input.item-value-checkbox(type='checkbox' id="bedroom_3")
+                                label.checkbox__label(for="bedroom_3") 3 Спальні
+                            input.rooms_all(type="text" id="rooms_all" value)
+                    .popup_selection_item
+                        .popup_selection_item__title Яка площа м²?
+                        .popup_selection_item__wrapper_for_inputs 
+                            input.item-value(placeholder="Від: 36м²" id="size-from")
+                            input.item-value(placeholder="До: 87м²" id="size-to")
+                    .popup_selection_item
+                        .popup_selection_item__title Що має бути у квартирі?
+                        .popup_selection_item__wrapper_for_checkboxes.popup_selection_item__wrapper_for_checkboxes2
+                            .checkbox
+                                input.checkbox__input.item-value-checkbox(type='checkbox' id="view")
+                                label.checkbox__label.item-value-checkbox(for="view") Вид
+                            .checkbox
+                                input.checkbox__input.item-value-checkbox(type='checkbox' id="side")
+                                label.checkbox__label(for="side") Сонячна/не сонячна сторона
+                            .checkbox
+                                input.checkbox__input.item-value-checkbox(type='checkbox' id="big_kitchen")
+                                label.checkbox__label(for="big_kitchen") Велика кухняб кухня об'єднана з вітальнею
+                            .checkbox
+                                input.checkbox__input.item-value-checkbox(type='checkbox' id="bathroom")
+                                label.checkbox__label(for="bathroom") 2 санвузли
+                            input.features_all(type="text" id="features_all" value)
+                    .popup_selection_item
+                        .popup_selection_item__title Для кого обираєте квартиру?  
+                        .popup_selection_item__wrapper_for_select 
+                            input(type="text" id="for_who_input" value)
+                            select(id="for-who")
+                                option(value="for_myself") Для себе
+                                option(value="for_my_family") Для своєї родини
+                                option(value="for_my_parents") Для батьків
+                                option(value="for_my_children") Для дітей
+                    .popup_selection__contacts_title Контакти
+                    .popup_form__item(data-field-input data-field-name)
+                        label(for="name") Ім’я:
+                        input(class="item-value" type="text" name="name" id="name" placeholder="Введіть своє Ім’я")
+                        .input-message(data-input-message)
+                    .popup_form__item(data-field-input data-field-phone)
+                        label(for="phone") Номер телефону
+                        input(class="item-value text" type="number" name="phone" id="phone" placeholder="Введіть ваш номер телефону")
+                        .input-message(data-input-message)
+                    .popup_form__bottom
+                        button(class="contact__form_button btn_blue" type="submit" data-btn-submit)
+                            span(data-btn-submit-text) Отримати планування
+                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_12_2088" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="23">
+                                    <path d="M21.665 0.834961H0.334961V22.165H21.665V0.834961Z" fill="#5d5b5b"/>
+                                </mask>
+                                <g mask="url(#mask0_12_2088)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.334961 4.73127L3.98152 0.834961H21.665V18.3686L17.6316 22.165V13.4818C17.6316 11.3683 17.6526 9.45356 17.6963 7.73588L3.5299 21.7691L0.722408 18.6981L14.8888 4.66559C13.2107 4.70978 11.328 4.73127 9.24144 4.73127H0.334961Z" fill="black"/>
+                                </g>
+                            </svg>
+                        

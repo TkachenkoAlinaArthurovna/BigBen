@@ -17,6 +17,10 @@
     flex-direction: column;
     width: 100%;
     color: $white;
+    font-family: 'GT-Walsheim-Bold', bold;
+    font-size: max(36px, 4.16vw);
+    line-height: 100%;
+    text-transform: uppercase;
   }
   &__title_bottom {
     display: flex;
@@ -27,7 +31,7 @@
       width: 120px;
       height: 120px;
     }
-    div {
+    div a {
       display: flex;
       align-items: center;
       gap: 8px;
@@ -40,6 +44,7 @@
       background: rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
+      color: $white;
       cursor: pointer;
       svg {
         width: 20px;
@@ -60,6 +65,7 @@
       display: flex;
       flex-direction: column;
       gap: max(12px, 1.25vw);
+      cursor: pointer;
       svg {
         transition: all 1s ease-out;
       }
@@ -80,11 +86,11 @@
       font-family: $default-font-m;
       font-size: max(21px, 1.66vw);
       span {
-        width: 70%;
+        width: 80%;
       }
       svg {
-        width: max(16px, 1.14vw);
-        height: max(16px, 1.14vw);
+        width: max(16px, 1.56vw);
+        height: max(16px, 1.56vw);
       }
     }
     .bottom_button_text {
@@ -175,11 +181,18 @@
     &__title_bottom {
       width: 100%;
       img {
-        display: none;
+        position: absolute;
+        right: max(16px, 9.375vw);
+        top: 0;
+        width: 90px;
+        height: 90px;
       }
       div {
         width: 100%;
         min-height: 46px;
+      }
+      p {
+        font-size: 15.5px;
       }
     }
     &__bottom_buttons {

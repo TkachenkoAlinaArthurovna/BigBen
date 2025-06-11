@@ -1,0 +1,28 @@
+extends ../layout/main 
+
+block meta
+  title= 'BigBen'
+  meta(name='description', content='')
+block head
+    link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+  script(defer src='./assets/scripts/vendors.bundle.js')
+  script(defer src='./assets/scripts/index.bundle.js')
+  script(defer src='./assets/scripts/libs.js')
+block header
+  include ../includes/header.pug
+  include ../includes/popup.pug
+  include ../includes/popup_doc.pug
+  include ../includes/popup_selection.pug
+block content
+  .page__content
+    .error.content
+        .error__wrapper 
+            .error__img
+                img(src="../../assets/images/404.png" alt="404")
+            .error__title Ой! Сторінку не знайдено
+            .error__text Ми не змогли знайти сторінку, яку ви шукали.<br> Можливо, вона була переміщена або її більше не існує.
+            a.error__button(href="./")
+                span Повернутись на головну
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+    

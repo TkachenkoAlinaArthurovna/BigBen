@@ -1,6 +1,8 @@
 .section_developer {
   position: relative;
-
+  &__bottom_img {
+    display: none;
+  }
   &__linear_gradient {
     position: absolute;
     z-index: 1;
@@ -81,7 +83,7 @@
       justify-content: start;
       gap: 10px;
       margin-bottom: 12px;
-      font-size: 20px;
+      font-size: max(18px, 1.09vw);
       line-height: 110%;
       color: $white;
       svg {
@@ -109,9 +111,10 @@
     color: $black_2;
     background-color: $gray;
     cursor: pointer;
+    transition: all 1s ease-out;
     svg {
-      width: 8px;
-      height: 8px;
+      width: 16px;
+      height: 16xp;
     }
   }
   &__button:hover {
@@ -121,12 +124,22 @@
 
 @media (max-width: 480px) {
   .section_developer {
+    &__bottom_img {
+      position: absolute;
+      bottom: 70px;
+      left: 50%;
+      transform: translate(-50%);
+      display: block;
+      width: 138px;
+      height: 138px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
     &__title {
       img {
-        position: absolute;
-        bottom: 70px;
-        left: 50%;
-        transform: translate(-50%);
+        display: none;
       }
     }
     &__button {
