@@ -13,7 +13,7 @@ export default function googleMap() {
 // Google map start
 async function func() {
   const script = document.createElement('script');
-  let key = 'AIzaSyBzbb-AuvMPkCnBLSyq4UYID22eZK7Fo_c';
+  let key = 'AIzaSyDN751eCNpQNrWU4sGocGGVjzM2YV7a3VM';
   // if (window.location.href.match(/localhost/)) key = '';
   script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap&language=ua`;
   document.getElementsByTagName('head')[0].appendChild(script);

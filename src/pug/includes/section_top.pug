@@ -1,4 +1,9 @@
 section.section_top
+    .section_top__sold 
+        img(src="../../assets/images/sold.png")
+        .section_top__sold_content
+            span продано:
+            span 65%
     img(src="../../assets/images/section_top.png" alt="houses")
     .section_top__title.content
         span Big ben
@@ -14,7 +19,7 @@ section.section_top
                     </svg>
                     p м. Львів, вул. Стрийська (Персенківка, 2)
 
-    .section_top__bottom_buttons.content
+    .section_top__bottom_buttons.content.for_index
         a.bottom_button.bottom_button_left(data-scroll-to="#planning")
             img(src="../../assets/images/bigben_pattern_1.png")
             div.bottom_button_title
@@ -29,6 +34,26 @@ section.section_top
                 span 242 квартири
                 span 93 квартири у продажу
         a.bottom_button.bottom_button_right(data-scroll-to="#planning")
+            div.bottom_button_title
+                span Здача
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+            div.bottom_button_text
+                span 1 квартал 2027 року
+    .section_top__bottom_buttons.content.not_index
+        a.bottom_button.bottom_button_left(href="./")
+            img(src="../../assets/images/bigben_pattern_1.png")
+            div.bottom_button_title
+                span На головну сторінку
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+        a.bottom_button.bottom_button_center(href="./")
+            div.bottom_button_title
+                span Квартири
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+            div.bottom_button_text
+                span 5 черг
+                span 242 квартири
+                span 93 квартири у продажу
+        a.bottom_button.bottom_button_right(href="./")
             div.bottom_button_title
                 span Здача
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>

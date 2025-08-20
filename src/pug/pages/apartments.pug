@@ -1,0 +1,30 @@
+extends ../layout/main 
+block variable
+  - var page = "apartments" 
+
+block meta
+  title= 'BigBen'
+  meta(name='description', content='')
+block head
+    link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+  script(defer src='./assets/scripts/vendors.bundle.js')
+  script(defer src='./assets/scripts/index.bundle.js')
+  script(defer src='./assets/scripts/libs.js')
+block header
+  include ../includes/header.pug
+  include ../includes/popup.pug
+  include ../includes/popup_doc.pug
+  include ../includes/popup_selection.pug
+block content
+  .page__content.apartments
+    include ../includes/section_top_apartments.pug
+    include ../includes/section_second_apartments.pug
+    include ../includes/section_top.pug
+    include ../includes/section_about.pug
+    
+    include ../includes/section_developer.pug
+     
+    
+block footer
+  include ../includes/footer.pug

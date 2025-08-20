@@ -181,8 +181,10 @@ input:-webkit-autofill:focus {
 .swiper-button-disabled.swiper-button::before {
   opacity: 0;
 }
-.swiper-button:hover::before {
-  left: -50%;
+@media (min-width: 1024px) {
+  .swiper-button:hover::before {
+    left: -50%;
+  }
 }
 
 .swiper-button-main-next {

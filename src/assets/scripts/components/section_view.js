@@ -1,10 +1,10 @@
-document.getElementById('loadIframeButton').addEventListener('click', function() {
-  // Заменяем URL iframe на реальный
-  var iframe = document.getElementById('lazyIframe');
-  iframe.src = 'https://v3.vrnet.io/?lscene=ua/riel/bigben/ext';
-  iframe.style.display = 'block';
+if (document.querySelector('.index_page')) {
+  document.getElementById('loadIframeButton').addEventListener('click', function() {
+    var iframe = document.getElementById('lazyIframe');
+    iframe.src = iframe.getAttribute('data-src');
+    iframe.style.display = 'block';
 
-  // Скрываем кнопку после загрузки iframe
-  this.style.display = 'none';
-  document.querySelector('.iframe-container').classList.add('active-iframe');
-});
+    this.style.display = 'none';
+    document.querySelector('.iframe-container').classList.add('active-iframe');
+  });
+}

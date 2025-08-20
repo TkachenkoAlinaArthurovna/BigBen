@@ -3,35 +3,34 @@ section.section_gallery_3.content(id="gallery")
         .section_gallery_3__title.section_title Галерея
         .section_gallery_3__tabs
             .section_gallery_3__tabs_buttons 
-                button.section_gallery_3__tabs_button.active(id="location") Територія
-                button.section_gallery_3__tabs_button(id="fun") Розваги
-                button.section_gallery_3__tabs_button(id="hall") Хол
-                //- button.section_gallery_3__tabs_button(id="floor") Житловий поверх
-                button.section_gallery_3__tabs_button(id="parking") Паркінг
-                button.section_gallery_3__tabs_button(id="basement") Укриття
+                button.section_gallery_3__tabs_button.active(id="location" data-id="territory") Територія
+                button.section_gallery_3__tabs_button(id="fun" data-id="fun") Розваги
+                button.section_gallery_3__tabs_button(id="hall" data-id="hall") Хол
+                button.section_gallery_3__tabs_button(id="parking" data-id="parking") Паркінг
+                button.section_gallery_3__tabs_button(id="basement" data-id="basement") Укриття
             .section_gallery_3__display 
-                .section_gallery_3__content.active(data-info="location")
+                .section_gallery_3__content.active
                     .gallery
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/1.png" alt="house")
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/3.png" alt="house")
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/5.png" alt="house")
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/2.png" alt="house")
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/4.png" alt="house")
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/6.png" alt="house")                   
+                        //- .gallery-item
+                        //-     img(src="../../assets/images/gallery_3/1.png" alt="house")
+                        //- .gallery-item
+                        //-     img(src="../../assets/images/gallery_3/3.png" alt="house")
+                        //- .gallery-item
+                        //-     img(src="../../assets/images/gallery_3/5.png" alt="house")
+                        //- .gallery-item
+                        //-     img(src="../../assets/images/gallery_3/2.png" alt="house")
+                        //- .gallery-item
+                        //-     img(src="../../assets/images/gallery_3/4.png" alt="house")
+                        //- .gallery-item
+                        //-     img(src="../../assets/images/gallery_3/6.png" alt="house")                   
                     .swiper.swiper_gallery_3_1
                         .swiper-wrapper
-                            .swiper-slide: img(src="../../assets/images/gallery_3/1.png")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/2.png")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/3.png")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/4.png")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/5.png")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/6.png")
+                            //- .swiper-slide: img(src="../../assets/images/gallery_3/1.png")
+                            //- .swiper-slide: img(src="../../assets/images/gallery_3/2.png")
+                            //- .swiper-slide: img(src="../../assets/images/gallery_3/3.png")
+                            //- .swiper-slide: img(src="../../assets/images/gallery_3/4.png")
+                            //- .swiper-slide: img(src="../../assets/images/gallery_3/5.png")
+                            //- .swiper-slide: img(src="../../assets/images/gallery_3/6.png")
                         .swiper-button-gallery_3_1-next.swiper-button-main-next.swiper-button
                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
@@ -40,101 +39,71 @@ section.section_gallery_3.content(id="gallery")
                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
                             </svg>
-                .section_gallery_3__content(data-info="fun")
-                    .gallery
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/11_Cinema.jpg" alt="house")
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/12_Workout zone.jpg" alt="house")
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/Badminton_court.jpg" alt="house")
-                    .swiper.swiper_gallery_3_2
-                        .swiper-wrapper
-                            .swiper-slide: img(src="../../assets/images/gallery_3/11_Cinema.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/12_Workout zone.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/Badminton_court.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/11_Cinema.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/12_Workout zone.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/Badminton_court.jpg")
-                        .swiper-button-gallery_3_2-next.swiper-button-main-next.swiper-button
-                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
-                            </svg>
-                        .swiper-button-gallery_3_2-prev.swiper-button-main-prev.swiper-button
-                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
-                            </svg>
-                .section_gallery_3__content(data-info="hall")
-                    .gallery
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg" alt="house")
-                    .swiper.swiper_gallery_3_3
-                        .swiper-wrapper
-                            .swiper-slide: img(src="../../assets/images/gallery_3/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg")
-                        .swiper-button-gallery_3_3-next.swiper-button-main-next.swiper-button
-                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
-                            </svg>
-                        .swiper-button-gallery_3_3-prev.swiper-button-main-prev.swiper-button
-                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
-                            </svg>
-                //- .section_gallery_3__content(data-info="floor")
+                //- .section_gallery_3__content(data-info="fun")
                 //-     .gallery
                 //-         .gallery-item
-                //-             img(src="../../assets/images/gallery_3/2.png" alt="house")
+                //-             img(src="../../assets/images/gallery_3/11_Cinema.jpg" alt="house")
                 //-         .gallery-item
-                //-             img(src="../../assets/images/gallery_3/2.png" alt="house")
+                //-             img(src="../../assets/images/gallery_3/12_Workout zone.jpg" alt="house")
                 //-         .gallery-item
-                //-             img(src="../../assets/images/gallery_3/2.png" alt="house")
-                //-         .gallery-item
-                //-             img(src="../../assets/images/gallery_3/2.png" alt="house")
-                //-         .gallery-item
-                //-             img(src="../../assets/images/gallery_3/2.png" alt="house")
-                //-         .gallery-item
-                //-             img(src="../../assets/images/gallery_3/2.png" alt="house")
-                //-     .swiper.swiper_gallery_3_4
+                //-             img(src="../../assets/images/gallery_3/Badminton_court.jpg" alt="house")
+                //-     .swiper.swiper_gallery_3_2
                 //-         .swiper-wrapper
-                //-             .swiper-slide: img(src="../../assets/images/gallery_3/1.png")
-                //-             .swiper-slide: img(src="../../assets/images/gallery_3/2.png")
-                //-             .swiper-slide: img(src="../../assets/images/gallery_3/3.png")
-                //-             .swiper-slide: img(src="../../assets/images/gallery_3/4.png")
-                //-             .swiper-slide: img(src="../../assets/images/gallery_3/5.png")
-                //-             .swiper-slide: img(src="../../assets/images/gallery_3/6.png")
-                //-         .swiper-button-gallery_3_4-next.swiper-button-main-next.swiper-button
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/11_Cinema.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/12_Workout zone.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/Badminton_court.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/11_Cinema.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/12_Workout zone.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/Badminton_court.jpg")
+                //-         .swiper-button-gallery_3_2-next.swiper-button-main-next.swiper-button
                 //-             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 //-                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
                 //-             </svg>
-                //-         .swiper-button-gallery_3_4-prev.swiper-button-main-prev.swiper-button
+                //-         .swiper-button-gallery_3_2-prev.swiper-button-main-prev.swiper-button
                 //-             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 //-                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
                 //-             </svg>
-                .section_gallery_3__content(data-info="parking")
-                    .gallery
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/cosmin-grosu-IuNFQ0EuyjI-unsplash.jpg" alt="house")
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/davide-boscolo-nFGVEQbgLIo-unsplash.jpg" alt="house")
-                    .swiper.swiper_gallery_3_5
-                        .swiper-wrapper
-                            .swiper-slide: img(src="../../assets/images/gallery_3/cosmin-grosu-IuNFQ0EuyjI-unsplash.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/davide-boscolo-nFGVEQbgLIo-unsplash.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/cosmin-grosu-IuNFQ0EuyjI-unsplash.jpg")
-                            .swiper-slide: img(src="../../assets/images/gallery_3/davide-boscolo-nFGVEQbgLIo-unsplash.jpg")
-                        .swiper-button-gallery_3_5-next.swiper-button-main-next.swiper-button
-                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
-                            </svg>
-                        .swiper-button-gallery_3_5-prev.swiper-button-main-prev.swiper-button
-                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
-                            </svg>
-                .section_gallery_3__content(data-info="basement")
-                    .gallery
-                        .gallery-item
-                            img(src="../../assets/images/gallery_3/manuel-gast-nLFsGKYfDl8-unsplash.jpg" alt="house")
-                    .swiper.swiper_gallery_3_6
+                //- .section_gallery_3__content(data-info="hall")
+                //-     .gallery
+                //-         .gallery-item
+                //-             img(src="../../assets/images/gallery_3/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg" alt="house")
+                //-     .swiper.swiper_gallery_3_3
+                //-         .swiper-wrapper
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg")
+                //-         .swiper-button-gallery_3_3-next.swiper-button-main-next.swiper-button
+                //-             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                //-                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
+                //-             </svg>
+                //-         .swiper-button-gallery_3_3-prev.swiper-button-main-prev.swiper-button
+                //-             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                //-                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
+                //-             </svg>
+                //- .section_gallery_3__content(data-info="parking")
+                //-     .gallery
+                //-         .gallery-item
+                //-             img(src="../../assets/images/gallery_3/cosmin-grosu-IuNFQ0EuyjI-unsplash.jpg" alt="house")
+                //-         .gallery-item
+                //-             img(src="../../assets/images/gallery_3/davide-boscolo-nFGVEQbgLIo-unsplash.jpg" alt="house")
+                //-     .swiper.swiper_gallery_3_5
+                //-         .swiper-wrapper
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/cosmin-grosu-IuNFQ0EuyjI-unsplash.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/davide-boscolo-nFGVEQbgLIo-unsplash.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/cosmin-grosu-IuNFQ0EuyjI-unsplash.jpg")
+                //-             .swiper-slide: img(src="../../assets/images/gallery_3/davide-boscolo-nFGVEQbgLIo-unsplash.jpg")
+                //-         .swiper-button-gallery_3_5-next.swiper-button-main-next.swiper-button
+                //-             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                //-                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
+                //-             </svg>
+                //-         .swiper-button-gallery_3_5-prev.swiper-button-main-prev.swiper-button
+                //-             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                //-                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292894 7.70711C-0.0976309 7.31658 -0.0976308 6.68342 0.292894 6.29289L6.29289 0.292894C6.68342 -0.0976313 7.31658 -0.0976313 7.70711 0.292894C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L3.41421 6L15 6C15.5523 6 16 6.44772 16 7C16 7.55229 15.5523 8 15 8L3.41421 8L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071Z" fill="white"/>
+                //-             </svg>
+                //- .section_gallery_3__content(data-info="basement")
+                //-     .gallery
+                //-         .gallery-item
+                //-             img(src="../../assets/images/gallery_3/manuel-gast-nLFsGKYfDl8-unsplash.jpg" alt="house")
+                //-     .swiper.swiper_gallery_3_6
                         .swiper-wrapper
                             .swiper-slide: img(src="../../assets/images/gallery_3/manuel-gast-nLFsGKYfDl8-unsplash.jpg")
                             .swiper-slide: img(src="../../assets/images/gallery_3/manuel-gast-nLFsGKYfDl8-unsplash.jpg")

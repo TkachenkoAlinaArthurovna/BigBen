@@ -50,14 +50,13 @@
     position: relative;
     width: 340px;
     max-height: 100vh;
-    height: 436px;
+    height: 450px;
     padding: 30px 34px;
     border-radius: 24px;
     background-color: $white;
   }
   .swiper {
     height: 100%;
-    overflow: auto;
   }
   &__close {
     position: absolute;

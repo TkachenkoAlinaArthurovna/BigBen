@@ -16,3 +16,5 @@ import './components/section_construction_bottom';
 import './components/section_doc';
 import './components/popup';
 import './components/popup_selection';
+import './components/section_construction_new';
+import './components/section_second_apartments';
