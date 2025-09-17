@@ -66,4 +66,15 @@ document.addEventListener('DOMContentLoaded', function() {
   selectElement.addEventListener('change', () => {
     selectElementInput.setAttribute('value', selectElement.value);
   });
+
+  const selectElementWay = document.getElementById('contact_way');
+  const selectElementInputWay = document.getElementById('contact_way_input');
+  selectElementWay.setAttribute('value', selectElementWay.value);
+  selectElementInputWay.setAttribute('value', selectElementWay.value);
+  selectElementWay.addEventListener('change', () => {
+    selectElementWay.setAttribute('value', selectElementWay.value);
+  });
+  selectElementWay.addEventListener('change', () => {
+    selectElementInputWay.setAttribute('value', selectElementWay.value);
+  });
 });

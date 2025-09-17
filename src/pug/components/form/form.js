@@ -14,10 +14,10 @@ const sendForm = async data => {
 };
 
 /*  */
-const lang = langDetect();
+const lang = document.documentElement.getAttribute('lang');
 (async () => {
   await i18next.init({
-    lng: 'uk', // Текущий язык
+    lng: lang, // Текущий язык
     debug: true,
     resources: {
       ru: {
@@ -258,6 +258,8 @@ export default class FormMonster {
 
           const ForWho = document.querySelector('#for-who').value;
 
+          const ContactWayInput = document.querySelector('#contact_way_input').value;
+
           formData.append('action', 'app');
           formData.append('price-from', priceFrom);
           formData.append('price-to', priceTo);
@@ -266,6 +268,7 @@ export default class FormMonster {
           formData.append('size-from', sizeFrom);
           formData.append('size-to', sizeTo);
           formData.append('for-who', ForWho);
+          formData.append('contact-way-input', ContactWayInput);
 
           /* eslint-disable-next-line */
           const { error, code_error } = await sendForm(formData);

@@ -219,7 +219,7 @@
       width: 142px;
       height: 56px;
       padding: 16px;
-      border: none;
+      border: 1px solid $gray;
       border-radius: 4px;
       background-color: $gray;
       cursor: pointer;
@@ -229,7 +229,7 @@
       background-color: $gray_3;
     }
     button:hover {
-      background-color: $gray_3;
+      border: 1px solid $black_2;
     }
   }
   &__content_right {

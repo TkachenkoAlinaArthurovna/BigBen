@@ -85,6 +85,21 @@
                         label(for="phone") Номер телефону
                         input(class="item-value text" type="number" name="phone" id="phone" placeholder="Введіть ваш номер телефону")
                         .input-message(data-input-message)
+                    <div class="popup_selection_item" style="padding-top: 40px;">
+                        <div class="popup_selection_item__title">Зручний варіант звʼязку: </div>
+                        <div class="popup_selection_item__wrapper_for_select">
+                            <input type="text" id="contact_way_input" style="visibility: hidden; opacity: 0; width: 0px; height: 0px;" value>
+                            <select id="contact_way">
+                                <option value="call">Зателефонувати</option>
+                                <option value="viber_text">написати у Viber</option>
+                                <option value="telegram_text">написати у Telegram</option>
+                                <option value="whatsapp_text">написати у WhatsApp</option>
+                                <option value="viber_call">зателефонувати у Viber</option>
+                                <option value="telegram_call">зателефонувати у Telegram</option>
+                                <option value="whatsapp_call">зателефонувати у WhatsApp</option>
+                            </select>
+                        </div>
+                    </div>
                     .popup_form__bottom
                         button(class="contact__form_button btn_blue" type="submit" data-btn-submit)
                             span(data-btn-submit-text) Отримати планування

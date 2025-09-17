@@ -158,7 +158,7 @@
         pointer-events: all;
         cursor: pointer;
         &.swiper-button-disabled {
-          pointer-events: none;
+          pointer-events: auto;
         }
       }
     }

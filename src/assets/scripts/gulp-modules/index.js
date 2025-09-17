@@ -29,6 +29,7 @@ document.querySelectorAll('[data-scroll-to]').forEach(button => {
       // Якщо елемента немає, переходимо на головну з параметром
       // Але замість # — додаємо спеціальний query-параметр, щоб уникнути різкого скролу
       window.location.href = '/?scrollTo=' + selector.replace('#', '');
+      console.log('test');
     } else {
       smoothScrollTo(target);
     }

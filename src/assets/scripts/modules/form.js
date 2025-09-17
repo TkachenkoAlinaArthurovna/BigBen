@@ -9,6 +9,14 @@ import { useState } from './helpers/helpers';
 /*
  * form handlers start
  */
+
+const lang = document.documentElement.getAttribute('lang');
+
+const text_success =
+  lang == 'uk'
+    ? "Дякуємо! Ми зв'яжемося з вами найближчим часом. Гарного дня! 🌿"
+    : 'Thank you! We will get in touch with you shortly. Have a great day! 🌿';
+
 const forms = ['[data-form="contact-form"]', '[data-form="call_back-form"]'];
 
 const formSelection = ['[data-form="call_back-form_selection"]'];
@@ -51,7 +59,7 @@ forms.forEach(form => {
                     </svg>
                   </div>
                   <img src="${window.location.origin}/wp-content/themes/3d/assets/images/cat.png" alt="cat"/>
-                  <div class="success-pop-up__text"> Дякуємо! Ми зв'яжемося з вами найближчим часом. Гарного дня! 🌿
+                  <div class="success-pop-up__text"> ${text_success}
                   </div>
                   <!--<button data-form-popup-close type="button" onclick="this.closest('[data-success]').remove();" class="contact__form_button btn_blue button-30 button-30--blue">
                     <span>На головну</span>
@@ -152,7 +160,7 @@ formSelection.forEach(form => {
                     </svg>
                   </div>
                   <img src="${window.location.origin}/wp-content/themes/3d/assets/images/cat.png" alt="cat"/>
-                  <div class="success-pop-up__text"> Дякуємо! Ми зв'яжемося з вами найближчим часом. Гарного дня! 🌿
+                  <div class="success-pop-up__text"> ${text_success}
                   </div>
                   <button data-form-popup-close type="button" onclick="this.closest('[data-success]').remove(); document.querySelector('.popup_selection').classList.remove('active');" class="contact__form_button btn_blue button-30 button-30--blue">
                     <span>На головну</span>
