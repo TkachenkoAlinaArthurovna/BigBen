@@ -9,8 +9,9 @@
 .section_top {
   position: relative;
   width: 100vw;
-  height: calc(var(--vh, 1vh) * 100);
-  min-height: 983px;
+  // height: calc(var(--vh, 1vh) * 100);
+  height: auto; // додати max-height
+  min-height: unset;
   img {
     display: block;
     width: 100%;
@@ -80,6 +81,7 @@
   }
   &__title {
     position: absolute;
+    top: 138px;
     bottom: 300px;
     display: flex;
     flex-direction: column;
@@ -98,6 +100,7 @@
     img {
       width: 120px;
       height: 120px;
+      padding-bottom: 0;
     }
     div a {
       display: flex;
@@ -220,14 +223,14 @@
 
 @media (max-width: 1500px) {
   .section_top {
-    min-height: 830px;
+    // min-height: 830px;
   }
 }
 
 @media (max-width: 1024px) {
   .section_top {
     &__bottom_buttons {
-      width: 100%;
+      // width: 100%;
     }
     .bottom_button_left {
       width: 33.333%;
@@ -245,7 +248,7 @@
     &__title {
       bottom: 360px;
     }
-    min-height: 800px;
+    // min-height: 800px;
     &__title_bottom {
       width: 100%;
       img {
