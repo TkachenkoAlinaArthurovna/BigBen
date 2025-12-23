@@ -6,6 +6,7 @@ const config = {
   entry: {
     'immediate-loading': './src/assets/scripts/immediate-loading.js',
     index: './src/assets/scripts/index-app.js',
+    finance: './src/assets/scripts/gulp-modules/finance.js'
     // projects: './src/assets/scripts/gulp-modules/projects.js',
   },
   output: {

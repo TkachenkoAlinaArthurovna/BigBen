@@ -2,7 +2,7 @@ import googleMap from '../modules/map/map';
 import '../modules/form';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-
+import "./finance.js"
 googleMap();
 
 document.querySelector('.popup').addEventListener('wheel', event => {
@@ -139,3 +139,4 @@ window.addEventListener('resize', () => {
   const vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
