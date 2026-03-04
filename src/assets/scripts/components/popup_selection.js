@@ -3,36 +3,40 @@ import noUiSlider from 'nouislider';
 const rangeSlider = document.getElementById('range-slider');
 
 if (rangeSlider) {
-  noUiSlider.create(rangeSlider, {
-    start: [100000, 200000],
-    connect: true,
-    step: 1,
-    range: {
-      min: 100000,
-      max: 200000,
-    },
-  });
-
-  const input0 = document.getElementById('input-0');
-  const input1 = document.getElementById('input-1');
-  const inputs = [input0, input1];
-
-  rangeSlider.noUiSlider.on('update', function(values, handle) {
-    inputs[handle].value = Math.round(values[handle]);
-  });
-
-  const setRangeSlider = (i, value) => {
-    let arr = [null, null];
-    arr[i] = value;
-    rangeSlider.noUiSlider.set(arr);
-  };
-
-  inputs.forEach((el, index) => {
-    el.addEventListener('change', e => {
-      setRangeSlider(index, e.currentTarget.value);
-      console.log(e.currentTarget.value);
+  if (rangeSlider.noUiSlider) {
+    console.warn('noUiSlider вже ініціалізовано на цьому елементі');
+  } else {
+    noUiSlider.create(rangeSlider, {
+      start: [100000, 200000],
+      connect: true,
+      step: 1,
+      range: {
+        min: 100000,
+        max: 200000,
+      },
     });
-  });
+
+    const input0 = document.getElementById('input-0');
+    const input1 = document.getElementById('input-1');
+    const inputs = [input0, input1];
+
+    rangeSlider.noUiSlider.on('update', function(values, handle) {
+      inputs[handle].value = Math.round(values[handle]);
+    });
+
+    const setRangeSlider = (i, value) => {
+      let arr = [null, null];
+      arr[i] = value;
+      rangeSlider.noUiSlider.set(arr);
+    };
+
+    inputs.forEach((el, index) => {
+      el.addEventListener('change', e => {
+        setRangeSlider(index, e.currentTarget.value);
+        console.log(e.currentTarget.value);
+      });
+    });
+  }
 }
 
 document.querySelectorAll('[data-popup-selection="open"]').forEach(button => {

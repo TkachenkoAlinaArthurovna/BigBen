@@ -84,8 +84,6 @@ window.addEventListener('scroll', () => {
 
     if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
       currentSectionId = section.getAttribute('id');
-
-      console.log(currentSectionId);
     }
   });
 

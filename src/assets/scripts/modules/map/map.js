@@ -8,10 +8,19 @@ if (filterBtn) {
   });
 }
 export default function googleMap() {
-  global.initMap = initMap;
+  window.initMap = initMap;
 }
+
+let isMapsLibraryLoading = false;
+
 // Google map start
 async function func() {
+  if (isMapsLibraryLoading || window.google?.maps || document.querySelector('script[src*="maps.googleapis.com"]')) {
+    return;
+  }
+
+  isMapsLibraryLoading = true;
+
   const script = document.createElement('script');
   const key = document.getElementById("map").dataset.api || ""
   
@@ -22,6 +31,7 @@ async function func() {
 
 // setTimeout(func, 1000);
 const maps = document.querySelectorAll('.map');
+console.log(maps);
 const options = {
   rootMargin: '0px',
   threshold: 0.1,
