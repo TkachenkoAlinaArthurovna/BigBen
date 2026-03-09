@@ -1,0 +1,678 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-25 11:10+0000\n"
+"PO-Revision-Date: 2026-03-03 14:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.8\n"
+"X-Loco-Version: 2.5.3; wp-6.8.1\n"
+
+msgid "Помешкання"
+msgstr "Apartment"
+
+msgid "Про Проєкт"
+msgstr "About the Project"
+
+msgid "Характеристики"
+msgstr "Specifications"
+
+msgid "Галерея"
+msgstr "Gallery"
+
+msgid "Документи"
+msgstr "Documents"
+
+msgid "Про забудовника"
+msgstr "About the Developer"
+
+msgid "Замовити дзвінок"
+msgstr "Request a Call"
+
+msgid "м. Львів, вул. Стрийська (Персенківка, 2)"
+msgstr "Lviv, Stryiska St. (Persenkivka, 2)"
+
+msgid "Пн-Пт: 09:00-19:00"
+msgstr "Mon-Fri: 09:00-19:00"
+
+msgid "Сб: 10:00-17:00"
+msgstr "Sat: 10:00-17:00"
+
+msgid "Нд: вихідний"
+msgstr "Sun: day off"
+
+msgid "Замовте дзвінок"
+msgstr "Order a call"
+
+msgid "і наш фахівець проконсультує вас з усіх питань"
+msgstr "and our specialist will advise you on all questions"
+
+msgid "Ім’я:"
+msgstr "Name:"
+
+msgid "Введіть своє Ім’я"
+msgstr "Enter your name"
+
+msgid "Спосіб зв’язку:"
+msgstr "Contact method:"
+
+msgid "Телефон"
+msgstr "Phone"
+
+msgid "Введіть ваш номер телефону"
+msgstr "Enter your phone number"
+
+msgid "Повідомлення"
+msgstr "Message"
+
+msgid "Введіть своє повідомлення тут..."
+msgstr "Enter your message here..."
+
+msgid "Надіслати"
+msgstr "Send"
+
+msgid "Натискаючи кнопку «Надіслати», ви погоджуєтесь на обробку персональних даних, як зазначено в нашій"
+msgstr "By clicking the 'Send' button, you agree to the processing of personal data as stated in our"
+
+msgid "політиці конфіденційності"
+msgstr "privacy policy"
+
+msgid "Дозвіл на виконання будівельних робіт"
+msgstr "Permit for construction works"
+
+msgid "Завантажити документ"
+msgstr "Download document"
+
+msgid "Підбір помешкання"
+msgstr "Apartment selection"
+
+msgid "Повернутися до помешкання"
+msgstr "Return to apartment"
+
+msgid "Який у вас бюджет?"
+msgstr "What is your budget?"
+
+msgid "Від $"
+msgstr "From $"
+
+msgid "до $"
+msgstr "to $"
+
+msgid "Яка кількість кімнат вам потрібна?"
+msgstr "How many rooms do you need?"
+
+msgid "Студія"
+msgstr "Studio"
+
+msgid "1 Спальня"
+msgstr "1 Bedroom"
+
+msgid "2 Спальні"
+msgstr "2 Bedrooms"
+
+msgid "3 Спальні"
+msgstr "3 Bedrooms"
+
+msgid "Яка площа м²?"
+msgstr "What area (m²)?"
+
+msgid "Що має бути у помешканні?"
+msgstr "What should be in the apartment?"
+
+msgid "Вид"
+msgstr "View"
+
+msgid "Сонячна/не сонячна сторона"
+msgstr "Sunny/not sunny side"
+
+msgid "Кухня об'єднана з вітальнею"
+msgstr "Kitchen combined with living room"
+
+msgid "2 санвузли"
+msgstr "2 bathrooms"
+
+msgid "Для кого обираєте помешкання?"
+msgstr "Who are you choosing the apartment for?"
+
+msgid "Для себе"
+msgstr "For myself"
+
+msgid "Для своєї родини"
+msgstr "For my family"
+
+msgid "Для батьків"
+msgstr "For parents"
+
+msgid "Для дітей"
+msgstr "For children"
+
+msgid "Контакти"
+msgstr "Contacts"
+
+msgid "Номер телефону"
+msgstr "Phone number"
+
+msgid "Залишити заявку"
+msgstr "Submit request"
+
+msgid "Big ben"
+msgstr "Big Ben"
+
+msgid "Столиця"
+msgstr "Capital"
+
+msgid "Життєлюбів"
+msgstr "of Life Lovers"
+
+msgid "Вибрати планування"
+msgstr "Choose a layout"
+
+msgid "6 черг"
+msgstr "6 phases"
+
+msgid "242 помешкання"
+msgstr "242 apartments"
+
+msgid "93 помешкання у продажу"
+msgstr "93 apartments for sale"
+
+msgid "Здача"
+msgstr "Completion"
+
+msgid "2 квартал 2027 р."
+msgstr "Q2 2027"
+
+msgid "яке планування"
+msgstr "which layout"
+
+msgid "ви шукаєте"
+msgstr "are you looking for"
+
+msgid "BIGBEN / Львів"
+msgstr "BIGBEN / Lviv"
+
+msgid "Отримати консультацію"
+msgstr "Get a consultation"
+
+msgid "Підібрати помешкання"
+msgstr "Find an apartment"
+
+msgid "уявіть, який вигляд"
+msgstr "imagine how"
+
+msgid "може мати ваше помешкання"
+msgstr "your apartment could look"
+
+msgid "Аерообліт"
+msgstr "Aerial view"
+
+msgid "Завантажити тур"
+msgstr "Load tour"
+
+msgid "Переваги"
+msgstr "Advantages"
+
+msgid "Розташування"
+msgstr "Location"
+
+msgid "Архітектурне рішення"
+msgstr "Architectural solution"
+
+msgid "Інфраструктура"
+msgstr "Infrastructure"
+
+msgid "Екосистема послуг"
+msgstr "Service ecosystem"
+
+msgid "Безпека"
+msgstr "Safety"
+
+msgid "Розташований у новому районі, що динамічно розвивається"
+msgstr "Located in a new and rapidly developing district"
+
+msgid "Поруч - зручна транспортна розв’язка, 4 парки та УКУ"
+msgstr "Nearby - convenient transport, 4 parks and UCU"
+
+msgid "На мапі - всі-всі розваги та вигоди навколо ЖК. Розглядай!"
+msgstr "On the map - all the entertainment and necessities around the complex. Explore!"
+
+msgid "Забронювати консультацію"
+msgstr "Book a consultation"
+
+msgid "Школи"
+msgstr "Schools"
+
+msgid "Університети"
+msgstr "Universities"
+
+msgid "Садочки"
+msgstr "Kindergartens"
+
+msgid "Медицина"
+msgstr "Medicine"
+
+msgid "Розваги"
+msgstr "Entertainment"
+
+msgid "Ресторани"
+msgstr "Restaurants"
+
+msgid "Спорт"
+msgstr "Sport"
+
+msgid "Продукти"
+msgstr "Groceries"
+
+msgid "Природа"
+msgstr "Nature"
+
+msgid "Цей проєкт - про сучасну інтерпретацію традиційного для Львова житла галерейного типу. Зовнішні фасади виконані в лаконічному стилі з яскравими акцентами, а внутрішні — у світлих, спокійних тонах. Усі помешкання з двосторонньою орієнтацією, де кухня виходить на галерею, а спальні — на вулицю або у внутрішній двір. Perfect!"
+msgstr "This project is about a modern interpretation of the traditional Lviv gallery-type housing. The exterior facades are minimalist with bright accents, and the interiors are in light, calm tones. All apartments are dual-aspect, with kitchens facing the gallery and bedrooms facing the street or inner courtyard. Perfect!"
+
+msgid "Big Ben — це простір щоденного задоволення, де кожен куточок створений для насолоди життям."
+msgstr "Big Ben is a space for daily pleasure, where every corner is designed for enjoying life."
+
+msgid "Тут чекає PopCorn Place з відкритим кінотеатром, Notting Chill з гамаками, Wembley для спортсменів, дитячі майданчики та Baskerville для чотирилапих друзів. Галереї зі зручними кріслами, зелені зони з фонтанчиками, дитячі майданчики та місця для бадмінтону — все для того, щоб кожен день feels like Friday, а сусіди ставали друзями вже з другого дня знайомства!"
+msgstr "Here you’ll find PopCorn Place with an open-air cinema, Notting Chill with hammocks, Wembley for athletes, playgrounds, and Baskerville for four-legged friends. Galleries with comfy chairs, green areas with fountains, playgrounds, and badminton spots — everything so that every day feels like Friday, and neighbors become friends from the second day!"
+
+msgid "У Big Ben вся інфраструктура для життя в кайф просто на території. Усе за кілька кроків від помешкання — жодних клопотів, лише задоволення."
+msgstr "At Big Ben, all the infrastructure for a great life is right on the territory. Everything is just a few steps from your apartment — no hassle, just pleasure."
+
+msgid "На території розміщуються:"
+msgstr "On the territory there are:"
+
+msgid "Торговий центр з магазинами та сервісами"
+msgstr "Shopping center with stores and services"
+
+msgid "Co-working для тих, хто хоче працювати поруч з домом"
+msgstr "Co-working for those who want to work close to home"
+
+msgid "Фудкорти й кафе для сніданків із друзями"
+msgstr "Food courts and cafes for breakfast with friends"
+
+msgid "Спортивний комплекс та massage-room для активностей і відпочинку"
+msgstr "Sports complex and massage room for activities and relaxation"
+
+msgid "Дитячий садок — зручно, без довгих поїздок"
+msgstr "Kindergarten — convenient, no long trips"
+
+msgid "Game-room — для розвитку й дозвілля"
+msgstr "Game room — for development and leisure"
+
+msgid "Бар — для відновлення і перезавантаження"
+msgstr "Bar — for recovery and reboot"
+
+msgid "Хімчистка — побутові послуги зовсім поруч"
+msgstr "Dry cleaning — household services right nearby"
+
+msgid "У Big Ben ваша безпека на британському рівні."
+msgstr "At Big Ben your safety is at the British level."
+
+msgid "Укриття royal class: "
+msgstr "Royal class shelter: "
+
+msgid "просторе сховище в підземному паркінгу з опаленням, туалетами та дитячою ігровою зоною"
+msgstr "spacious shelter in the underground parking with heating, toilets, and a children's play area"
+
+msgid "Двори без машин:"
+msgstr "Car-free yards:"
+
+msgid "повністю пішохідні простори для безпечних прогулянок"
+msgstr "completely pedestrian spaces for safe walks"
+
+msgid "Відеоспостереження 24/7:"
+msgstr "24/7 video surveillance:"
+
+msgid "жодний куточок території не залишається без нагляду"
+msgstr "no corner of the territory is left without supervision"
+
+msgid "Освітлення по-британськи:"
+msgstr "British-style lighting:"
+
+msgid "система «людино-friendly» – без сліпих зон, комфортна для очей"
+msgstr "human-friendly system without blind spots, comfortable for the eyes"
+
+msgid "Антиковзке покриття:"
+msgstr "Anti-slip coating:"
+
+msgid "на всіх загальних зонах indoor i outdoor"
+msgstr "in all common indoor and outdoor areas"
+
+msgid "Smart Home від Ajax:"
+msgstr "Smart Home by Ajax:"
+
+msgid "отримайте стартовий комплект безпеки (хаб, датчик руху, датчик відчинення та брелок із тривожною кнопкою) для подальшого розширення системи «розумного дому»"
+msgstr "get a starter security kit (hub, motion sensor, opening sensor, and key fob with panic button) for further expansion of your smart home system"
+
+msgid "Паркінг"
+msgstr "Parking"
+
+msgid "Підземний"
+msgstr "Underground"
+
+msgid "Територія"
+msgstr "Territory"
+
+msgid "Закриті внутрішні двори"
+msgstr "Closed inner yards"
+
+msgid "Висота стелі"
+msgstr "Ceiling height"
+
+msgid "2,7 м"
+msgstr "2.7 m"
+
+msgid "Опалення"
+msgstr "Heating"
+
+msgid "Централізоване"
+msgstr "Centralized"
+
+msgid "Утеплення"
+msgstr "Insulation"
+
+msgid "Мінеральна вата"
+msgstr "Mineral wool"
+
+msgid "Стіни"
+msgstr "Walls"
+
+msgid "Газобетон"
+msgstr "Aerated concrete"
+
+msgid "Технологія будівництва"
+msgstr "Construction technology"
+
+msgid "Каркасна"
+msgstr "Frame"
+
+msgid "Поверховість"
+msgstr "Number of floors"
+
+msgid "7-18"
+msgstr "7-18"
+
+msgid "Кількість будинків"
+msgstr "Number of buildings"
+
+msgid "16"
+msgstr "16"
+
+msgid "Клас"
+msgstr "Class"
+
+msgid "Комфорт"
+msgstr "Comfort"
+
+msgid "Тут ваш автомобіль у безпеці, а двори залишимо людям."
+msgstr "Your car is safe here, and the yards are left for people."
+
+msgid "У ЖК Big Ben ми подбали про все, зокрема про ваші зручність і безпеку. Залишайте свій автомобіль у надійному місці — і насолоджуйтеся затишком у дворі, вільному від машин."
+msgstr "At Big Ben, we have thought of every detail — especially your comfort and safety. Leave your car in a reliable place and enjoy the coziness of a car-free yard."
+
+msgid "Двори без машин"
+msgstr "Car-free yards"
+
+msgid "Спокійні та затишні простори для відпочинку та спілкування"
+msgstr "Calm and cozy spaces for relaxation and communication."
+
+msgid "Підземний паркінг на 328 місць"
+msgstr "Underground parking for 328 cars"
+
+msgid "Зручне приватне місце для вашого авто"
+msgstr "A convenient private spot for your car"
+
+msgid "Гостьовий паркінг"
+msgstr "Guest parking"
+
+msgid "Місця для тимчасової стоянки авто гостей комплексу"
+msgstr "Spaces for temporary parking of guests' cars"
+
+msgid "Хол"
+msgstr "Lobby"
+
+msgid "Укриття"
+msgstr "Shelter"
+
+msgid "Зв'язатися з менеджером"
+msgstr "Contact the manager"
+
+msgid "Прогрес робіт"
+msgstr "Work progress"
+
+msgid "Акції та новини"
+msgstr "Promotions and news"
+
+msgid "Умови оплати"
+msgstr "Payment terms"
+
+msgid "Внесок від 30%. Ціна збільшується на 5% одноразово"
+msgstr "Down payment from 30%. Price increases by 5% one-time"
+
+msgid "Внесок від 50%. Без зміни вартості."
+msgstr "Down payment from 50% with no price change"
+
+msgid "Повна оплата. Знижка 3%."
+msgstr "Full payment — 3% discount"
+
+msgid "Розтермінування"
+msgstr "Installment plan"
+
+msgid "Щомісячно або поквартально"
+msgstr "Monthly or quarterly"
+
+msgid "Прив'язка до курсу продажу $ на"
+msgstr "Linked to the USD exchange rate at"
+
+msgid "ДОДАТКОВІ ЗНИЖКИ"
+msgstr "ADDITIONAL DISCOUNTS"
+
+msgid "Знижки діють для "
+msgstr "Discounts apply for "
+
+msgid "Військовослужбовців"
+msgstr "Military personnel"
+
+msgid "(усі залучені структури) та їхніх сімей,"
+msgstr "(all involved structures) and their families,"
+
+msgid "Медпрацівників"
+msgstr "Medical workers"
+
+msgid "та їхніх сімей,"
+msgstr "and their families,"
+
+msgid "ВПО"
+msgstr "IDPs"
+
+msgid "із зони бойових дій"
+msgstr "from the combat zone"
+
+msgid "Умова"
+msgstr "Condition"
+
+msgid "Знижка надається за будь-якого першого внеску"
+msgstr "Discount is provided for any first payment"
+
+msgid "Якщо перебувають у зоні бойових дій — знижка 5%"
+msgstr "If in a combat zone — 5% discount"
+
+msgid "Якщо не перебувають у зоні бойових дій — знижка 3%"
+msgstr "If not in a combat zone — 3% discount"
+
+msgid "— Знижка 5%"
+msgstr "— 5% discount"
+
+msgid "Девелопер"
+msgstr "Developer"
+
+msgid "РІЕЛ — системний девелопер, який не зупиняється"
+msgstr "Riel is a systematic developer that never stops"
+
+msgid "На ринку з 2003 року"
+msgstr "On the market since 2003"
+
+msgid "100+ збудованих об’єктів загальною площею понад 1 мільйон квадратних метрів у Києві та Львові"
+msgstr "100+ completed projects totaling over 1 million square meters in Kyiv and Lviv"
+
+msgid "Єдиний у Києві, хто добудував усі об’єкти, розпочаті до повномасштабної війни"
+msgstr "The only one in Kyiv to complete all projects started before the full-scale war"
+
+msgid "Дізнатись більше"
+msgstr "Learn more"
+
+msgid "Давайте почнемо"
+msgstr "Let's get started"
+
+msgid "Зацікавлені в цій нерухомості? Заповніть форму нижче, і наші фахівці з нерухомості зв'яжуться з вами для надання більш докладної інформації, включно з плануванням перегляду та відповідями на всі ваші запитання."
+msgstr "Interested in this property? Fill out the form below and our real estate specialists will contact you for more information, including scheduling a viewing and answering any questions."
+
+msgid "Ми чекаємо на ваш відгук"
+msgstr "We are waiting for your feedback"
+
+msgid "Напишіть нам і дізнайтеся, що ви пропустили."
+msgstr "Write to us and find out what you missed."
+
+msgid "© 2025 BIGBEN all rights reserved"
+msgstr "© 2025 BIGBEN all rights reserved"
+
+msgid "Політика обробки персональних даних"
+msgstr "Personal data processing policy"
+
+msgid "Вартість від"
+msgstr "Starts from"
+
+msgid "Січень"
+msgstr "January"
+
+msgid "Лютий"
+msgstr "February"
+
+msgid "Березень"
+msgstr "March"
+
+msgid "Квітень"
+msgstr "April"
+
+msgid "Травень"
+msgstr "May"
+
+msgid "Червень"
+msgstr "June"
+
+msgid "Липень"
+msgstr "July"
+
+msgid "Серпень"
+msgstr "August"
+
+msgid "Вересень"
+msgstr "September"
+
+msgid "Жовтень"
+msgstr "October"
+
+msgid "Листопад"
+msgstr "November"
+
+msgid "Грудень"
+msgstr "December"
+
+msgid "Хід будівництва"
+msgstr "Construction progress"
+
+msgid "продано"
+msgstr "sold"
+
+msgid "На головну сторінку"
+msgstr "Back to homepage"
+
+msgid "Житло, яке <br>заробляє"
+msgstr "Income-generating <br>property"
+
+msgid "Чому апартаменти <br>це інвестиція"
+msgstr "Why apartments <br>are an investment"
+
+msgid "Апартаменти — це житло, яке розширює можливості. Це варіант для тих, хто хоче більше, ніж просто “свої метри”. Це ваш стиль, ваша гнучкість і ваша інвестиція в майбутнє. Особливо коли йдеться про сучасні апартаменти в житлових комплексах нового покоління — як ЖК Big Ben у Львові."
+msgstr "Apartments are a type of housing that expands your possibilities. It's an option for those who want more than just their own square meters. It’s your style, your flexibility, and your investment in the future. Especially when it comes to modern apartments in next-generation residential complexes — like the Big Ben residential complex in Lviv."
+
+msgid "гнучкість можливостей"
+msgstr "flexibility of opportunities"
+
+msgid "Живеш сьогодні — заробляєш завтра"
+msgstr "Live today — earn tomorrow"
+
+msgid "Апартаменти ідеально підходять для тих, хто хоче жити “тут і зараз”, але не забуває про майбутнє. Ви можете облаштувати їх під себе, а з часом — легко перетворити на прибутковий бізнес: подобова оренда, офіс для компанії або навіть шоурум. У проєкті Big Ben для цього створено ціле середовище — від фудкортів і кінотеатру під відкритим небом до просторів для роботи та дозвілля."
+msgstr "Apartments are perfect for those who want to live in the moment but still think about the future. You can customize them to suit your lifestyle and later easily turn them into a profitable business: short-term rentals, a company office, or even a showroom. The Big Ben project offers a complete environment for this — from food courts and open-air cinemas to spaces for work and leisure."
+
+msgid "Вища дохідність"
+msgstr "Higher profitability"
+
+msgid "Апартаменти, особливо в локаціях із розвинутою інфраструктурою, приносять більше доходу з оренди, ніж звичайні квартири. Їх частіше вибирають туристи, ділові гості, фрілансери. У результаті — швидке повернення інвестицій і стабільний грошовий потік. Big Ben розташований у районі з високим попитом на оренду — поблизу УКУ, ІТ-компаній і Стрийського парку."
+msgstr "Apartments, especially in locations with developed infrastructure, generate more rental income than regular flats. They are more frequently chosen by tourists, business guests, and freelancers. As a result, there is a fast return on investment and a stable cash flow. Big Ben is located in an area with high rental demand — near UCU, IT companies, and Stryiskyi Park."
+
+msgid "Свобода планування та дизайну"
+msgstr "Freedom of layout and design"
+
+msgid "Більше простору, менше обмежень. Апартаменти характеризуються більш вільним плануванням — це можливість створити саме той простір, який вам потрібен: житловий, робочий або змішаний. Особливо якщо вибираєте апартаменти з панорамними вікнами й унікальною архітектурою — як у Big Ben."
+msgstr "More space, fewer restrictions. Apartments feature a more flexible layout — the opportunity to create exactly the space you need: residential, work, or mixed-use. Especially if you choose apartments with panoramic windows and unique architecture — like at Big Ben."
+
+msgid "Менші витрати на утримання"
+msgstr "Lower maintenance costs"
+
+msgid "Апартаменти можуть передбачати нижчий податок на нерухомість і менше бюрократичних процедур у використанні з комерційною метою — залежно від статусу та регіону. Це робить їх ще привабливішими для інвесторів."
+msgstr "Apartments may involve lower property taxes and fewer bureaucratic procedures for commercial use — depending on their status and region. This makes them even more attractive to investors."
+
+msgid "Сучасні будівлі популярніші для оренди"
+msgstr "Modern buildings are more popular for rent"
+
+msgid "Новобудови з продуманою інфраструктурою, безпечним середовищем і стильним дизайном мають перевагу на ринку оренди. Big Ben — це концептуальний проєкт. Він створений як житловий простір нового типу — з атмосферою міського гедонізму, сучасними рішеннями для життя й дозвілля."
+msgstr "New buildings with well-planned infrastructure, a safe environment, and stylish design have an advantage on the rental market. Big Ben is a conceptual project — designed as a new type of living space with an atmosphere of urban hedonism and modern solutions for life and leisure."
+
+msgid "Зателефонувати"
+msgstr "Call"
+
+msgid "написати у Viber"
+msgstr "Text via Viber"
+
+msgid "написати у Telegram"
+msgstr "Text via Telegram"
+
+msgid "написати у WhatsApp"
+msgstr "Text via WhatsApp"
+
+msgid "зателефонувати у Viber"
+msgstr "Call via Viber"
+
+msgid "зателефонувати у Telegram"
+msgstr "Call via Telegram"
+
+msgid "зателефонувати у WhatsApp"
+msgstr "Call via WhatsApp"
+
+msgid "Зручний варіант звʼязку: "
+msgstr "Preferred contact method: "
+
+msgid "Фінансові продукти"
+msgstr "Financial products"
+
+msgid "Канікули на платежі"
+msgstr "Payment holidays"
+
+msgid "Допомога з перепродажем"
+msgstr "Resale assistance"
+
+msgid "Компенсація у випадку затримки"
+msgstr "Delay Compensation & Rewards"
+
+msgid "Можливість заміни на більшу площу"
+msgstr "Upgrade to Larger Area"
+
+msgid "Допомога з продажем попередньої нерухомості та індивідуальний графік розтермінування (трейд-ін)"
+msgstr "Assistance with Selling Previous Property and an Individual Installment Schedule (Trade-In)"
