@@ -1,14 +1,14 @@
 .section_video {
   position: sticky !important;
   top: 0;
-  height: 100vh;
+  // height: 100vh;
   padding-top: 130px;
   padding-bottom: max(40px, 8.33vw);
   // background: $white;
   &__stub {
     img {
       width: 100%;
-      height: 80vh;
+      // height: 80vh;
       object-fit: cover;
       object-position: center;
     }
