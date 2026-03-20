@@ -2,7 +2,7 @@ import googleMap from '../modules/map/map';
 import '../modules/form';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import "./finance.js"
+import './finance.js';
 googleMap();
 
 document.querySelector('.popup').addEventListener('wheel', event => {
@@ -120,6 +120,17 @@ gsap.utils.toArray('.section_title').forEach(title => {
 
 // Плавное поочерёдное появление спанов при загрузке страницы
 window.addEventListener('DOMContentLoaded', () => {
+  const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+  const params = new URLSearchParams(window.location.search);
+
+  UTM_KEYS.forEach(key => {
+    const value = params.get(key);
+    if (value && !sessionStorage.getItem(key)) {
+      sessionStorage.setItem(key, value);
+    }
+  });
+
   gsap.from('.section_top__title.content span', {
     opacity: 0,
     y: 30,
@@ -137,4 +148,3 @@ window.addEventListener('resize', () => {
   const vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
-
