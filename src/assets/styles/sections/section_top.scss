@@ -172,7 +172,7 @@
       line-height: 140%;
     }
     .bottom_button_left {
-      width: 24vw;
+      width: 22vw;
       height: max(190px, 11vw);
       color: $white;
       background-color: $red;
@@ -193,7 +193,7 @@
       background-color: $red_2;
     }
     .bottom_button_center {
-      width: 22.7vw;
+      width: 21.7vw;
       height: max(146px, 9.32vw);
       color: $dark_red;
       background-color: $dark_beige;
@@ -206,7 +206,7 @@
       background-color: $beige_2;
     }
     .bottom_button_right {
-      width: 22.7vw;
+      width: 21.7vw;
       height: max(100px, 7.03vw);
       color: $black;
       background-color: $white;
@@ -217,6 +217,27 @@
     }
     .bottom_button_right:hover {
       background-color: $gray_2;
+    }
+    .bottom_button_smallest {
+      position: relative;
+      width: 21vw;
+      height: max(80px, 5.03vw);
+      color: #fff;
+      background-color: #ee1e04;
+      transition: all 1s ease-out;
+
+      span {
+        width: 100%;
+      }
+      svg {
+        position: absolute;
+        top: max(16px, 1.35vw);
+        right: max(16px, 1.14vw);
+      }
+      
+      svg path {
+        fill: #fff;
+      }
     }
   }
 }

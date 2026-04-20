@@ -139,6 +139,15 @@
       margin: 0;
       font-family: $default-font-b;
     }
+  }[data-info='favorable_rates'] .section_benefits__content_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 32px;
+    h3 {
+      margin: 0;
+      font-family: $default-font-b;
+    }
   }
   &__content_text {
     display: flex;
