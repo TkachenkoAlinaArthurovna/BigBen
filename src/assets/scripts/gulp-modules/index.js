@@ -32,6 +32,18 @@ document.querySelectorAll('[data-scroll-to]').forEach(button => {
       console.log('test');
     } else {
       smoothScrollTo(target);
+      if (selector === '#benefits') {
+        const tab = document.querySelector('#favorable_rates');
+
+        document.querySelectorAll('.section_benefits__tabs_button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+
+        if (tab) {
+          tab.classList.add('active');
+          tab.click();
+        }
+      }
     }
   });
 });
